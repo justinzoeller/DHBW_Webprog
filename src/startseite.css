@@ -27,4 +27,9 @@ table, th, td {
 #ueberschriftstart{
   text-align: center;
   font-family: "Cookie", cursive;
+  font-size: 8vw;
+}
+
+.navbar-brand {
+  font-family: Pacifico
 }
