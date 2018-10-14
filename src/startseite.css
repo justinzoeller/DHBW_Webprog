@@ -24,7 +24,7 @@ table, th, td {
   padding: 15px;
 }
 
-#ueberschriftstart{
+#ueberschriftstart, .hauptüberschrift{
   text-align: center;
   font-family: "Cookie", cursive;
   font-size: 8vw;
@@ -45,4 +45,40 @@ table, th, td {
 #uhrzeit{
   font-family: "Sacramento", cursive;
   font-weight: bold;
+}
+
+.label {
+  font-family: "Cookie", cursive;
+  font-size: 4vw;
+}
+
+.einreichen {
+  border: 1px solid blue;
+  font-family: "Cookie", cursive;
+  color: white
+  background-color: blue;
+  text-align: center;
+}
+
+.infohaupt {
+  font-family: "Cookie", cursive;
+  font-size: 8vw;
+  text-align: center;
+}
+.text {
+  font-family: "Neucha", cursive;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.infoueberschrift {
+  font-family: "Cookie", cursive;
+  font-size: 10vw;
+  text-align: center;
+}
+
+.infolink{
+  font-family: "Cookie", cursive;
+  font-size: 8vw;
+  text-align: center;
 }
