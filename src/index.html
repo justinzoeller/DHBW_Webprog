@@ -9,6 +9,10 @@
   <!-- Importierte Schriftarten von Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
@@ -27,10 +31,10 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Deine Woche <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html">Deine Woche <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Erstellen</a>
+        <a class="nav-link" href="erstellen.html">Erstellen</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -63,7 +67,7 @@
       <table class = "table">
         <thead>
           <!-- Aufbauen der Spalten -->
-          <tr>
+          <tr id="spalten">
             <th scope="col">Uhrzeit</th>
             <th scope="col">Montag</th>
             <th scope= "col">Dienstag</th>
@@ -79,14 +83,14 @@
           Die gespeicherten Aktivitäten müssen hier rein.-->
           <tr>
             <!-- 8:00-10:00 Uhr-->
-            <th scope="row">8:00-10:00</th>
-            <th scope="col">Platzhalter1a</th>
-            <th scope= "col">Platzhalter2a</th>
-            <th scope= "col">Platzhalter3a</th>
-            <th scope= "col">Platzhalter4a</th>
-            <th scope= "col">Platzhalter5a</th>
-            <th scope= "col">Platzhalter6a</th>
-            <th scope= "col">Platzhalter7a</th>
+            <th scope= "row"  id="uhrzeit">8:00-10:00</th>
+            <th scope= "col"  id="montag">Platzhalter1a</th>
+            <th scope= "col"  id="dienstag">Platzhalter2a</th>
+            <th scope= "col"  id="mittwoch"   >Platzhalter3a</th>
+            <th scope= "col"  id="donnerstag">Platzhalter4a</th>
+            <th scope= "col"  id= "freitag">Platzhalter5a</th>
+            <th scope= "col"  id="samstag">Platzhalter6a</th>
+            <th scope= "col"  id="sonntag">Platzhalter7a</th>
           </tr>
           <tr>
             <!-- 10:00-12:00 Uhr -->

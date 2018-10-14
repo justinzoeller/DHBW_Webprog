@@ -30,6 +30,19 @@ table, th, td {
   font-size: 8vw;
 }
 
+.navbar {
+  font-family: "Roboto", sans-serif;
+}
+
 .navbar-brand {
-  font-family: Pacifico
+  font-family: "Pacifico";
+}
+
+#spalten {
+  font-family: "Neucha", cursive;
+}
+
+#uhrzeit{
+  font-family: "Sacramento", cursive;
+  font-weight: bold;
 }
