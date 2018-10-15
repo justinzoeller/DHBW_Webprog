@@ -74,25 +74,54 @@
     </div>
     <div class="form-group">
       <div class="form-group">
-        <label for="zeit" class = "label">Zeitraum der Aktivität</label>
-        <select class="form-control" id="zeitSelect">
-          <!-- Aktivitäten können max. 12 Stunden dauern. -->
-          <option>1 Stunden</option>
-          <option>2 Stunden</option>
-          <option>3 Stunden</option>
-          <option>4 Stunden </option>
-          <option>5 Stunde</option>
-          <option>6 Stunden</option>
-          <option>7 Stunden</option>
-          <option>8 Stunden</option>
-          <option>9 Stunde</option>
-          <option>10 Stunden</option>
-          <option>11 Stunden</option>
-          <option>12 Stunden </option>
+        <label for="zeit" class = "label">Anfangszeit der Aktivität</label>
+        <select class="form-control" id="zeitvon">
+          <!-- Anfangszeit der Aktivität. Zeitraum von 8-22 Uhr möglich -->
+          <option>8:00 Uhr</option>
+          <option>9:00 Uhr</option>
+          <option>10:00 Uhr</option>
+          <option>11:00 Uhr</option>
+          <option>12:00 Uhr</option>
+          <option>13:00 Uhr</option>
+          <option>14:00 Uhr</option>
+          <option>15:00 Uhr</option>
+          <option>16:00 Uhr</option>
+          <option>17:00 Uhr</option>
+          <option>18:00 Uhr</option>
+          <option>19:00 Uhr</option>
+          <option>20:00 Uhr</option>
+          <option>21:00 Uhr</option>
+          <option>22:00 Uhr</option>
         </select>
         <p> </p>
-        <small id="prioHelp" class="form-text text-muted">Schätze den Zeitaufwand. Abhängig von dem eingegeben Zeitaufwand wird deine Aktivität in "Deine Woche" anders dargestellt.</small>
+        <small id="zeitvonHelp" class="form-text text-muted">Trage hier die Anfangszeit deiner Aktivität ein.</small>
       </div>
+      <div class="form-group">
+        <div class="form-group">
+          <label for="zeit" class = "label">Endzeit der Aktivität</label>
+          <select class="form-control" id="zeitbis">
+            <!-- Anfangszeit der Aktivität. Zeitraum von 8-22 Uhr möglich -->
+            <option>8:00 Uhr</option>
+            <option>9:00 Uhr</option>
+            <option>10:00 Uhr</option>
+            <option>11:00 Uhr</option>
+            <option>12:00 Uhr</option>
+            <option>13:00 Uhr</option>
+            <option>14:00 Uhr</option>
+            <option>15:00 Uhr</option>
+            <option>16:00 Uhr</option>
+            <option>17:00 Uhr</option>
+            <option>18:00 Uhr</option>
+            <option>19:00 Uhr</option>
+            <option>20:00 Uhr</option>
+            <option>21:00 Uhr</option>
+            <option>22:00 Uhr</option>
+          </select>
+          <p> </p>
+          <small id="zeitbisHelp" class="form-text text-muted">Trage hier die Endzeit deiner Aktivität ein.</small>
+        </div>
+
+
     <!-- Das Element für die Priorität der Aktivität -->
     <div class="form-group">
       <label for="prio" class = "label">Priorität deiner Aktivität</label>
