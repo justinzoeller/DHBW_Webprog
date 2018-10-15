@@ -17,7 +17,6 @@ let abschicken = event => {
    if (nameakt == "") {
      okay = false;
      message = "Hey, du hast vergessen, deiner Aktivität einen Namen zu geben!";
-     
    }
 }
 }
