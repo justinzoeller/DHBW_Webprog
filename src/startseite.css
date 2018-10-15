@@ -82,3 +82,10 @@ table, th, td {
   font-size: 8vw;
   text-align: center;
 }
+
+.btn-primary{
+  text-align: center;
+  font-family: "Cookie", cursive;
+  font-size: 2vw;
+  margin-top: 4vw;
+}
