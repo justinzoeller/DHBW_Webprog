@@ -9,6 +9,10 @@ html {
 
 body {
   background-color: white;
+
+  background-image: url(test2.jpg.jpg);
+
+
    /* Da eine Woche 7 Tage hat.*/
 .kalender {
   display: grid;
@@ -62,11 +66,12 @@ table, th, td {
 
 .infohaupt {
   font-family: "Cookie", cursive;
-  font-size: 8vw;
+  font-size: 5vw;
   text-align: center;
+  color: white;
 }
 .text {
-  font-family: "Neucha", cursive;
+  font-family: "Handlee", cursive;
   font-size: 3vw;
   text-align: center;
 }
@@ -75,12 +80,15 @@ table, th, td {
   font-family: "Cookie", cursive;
   font-size: 10vw;
   text-align: center;
+  color: white;
 }
 
 .infolink{
   font-family: "Cookie", cursive;
   font-size: 8vw;
   text-align: center;
+  color: black;
+
 }
 
 .btn-primary{
