@@ -1,12 +1,20 @@
+/* Hierbei handelt es sich um die CSS-Datei für die Startseite der Anwendung basierend auf Google Material Design */
 
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
+html {
+  font-family: "helvetica neue"
+}
 
 body {
   background-color: white;
-
-  background-image: url(test2.jpg.jpg);
-
-
    /* Da eine Woche 7 Tage hat.*/
+.kalender {
+  display: grid;
+  grid-template-columns: 8ch auto;
+}
+}
 
 /* Anpassungen für die Tabelle
   bzw. den Wocehenplaner */
@@ -42,7 +50,7 @@ table, th, td {
 .label {
   font-family: "Cookie", cursive;
   font-size: 4vw;
-  color: white
+  color: white;
 }
 
 .einreichen {
@@ -55,12 +63,11 @@ table, th, td {
 
 .infohaupt {
   font-family: "Cookie", cursive;
-  font-size: 5vw;
+  font-size: 8vw;
   text-align: center;
-  color: white;
 }
 .text {
-  font-family: "Handlee", cursive;
+  font-family: "Neucha", cursive;
   font-size: 3vw;
   text-align: center;
 }
@@ -69,15 +76,12 @@ table, th, td {
   font-family: "Cookie", cursive;
   font-size: 10vw;
   text-align: center;
-  color: white;
 }
 
 .infolink{
   font-family: "Cookie", cursive;
   font-size: 8vw;
   text-align: center;
-  color: black;
-
 }
 
 .btn-primary{
@@ -91,6 +95,6 @@ table, th, td {
   font-family: "Roboto", sans-serif;
 }
 
-.erstellen {
+html {
   background-color: blue;
 }
