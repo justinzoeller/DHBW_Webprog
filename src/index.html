@@ -18,6 +18,12 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+
+  <!-- Einbinden von Moment.js-Bibliothek, um auf das aktuelle Datum zugreifen zu können.-->
+  <script src="moment.js"></script>
+  <script>
+    moment().format();
+  </script>
 </head>
 
 
@@ -65,6 +71,10 @@
 
   <div class="container">
     <h1 id = "ueberschriftstart"> Deine Woche </h1>
+    <text id="wochenangabevon"> </text>
+    <text id="wochenangabeheute"> </text>
+    <text id="wochenangabebis"> </text>
+
     <div class ="table-responsive">
       <table class = "table">
         <thead>
