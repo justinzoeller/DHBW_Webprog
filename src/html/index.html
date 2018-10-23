@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8"/>
+  <title> MyPlaner - dein digitaler Wochenplaner </title>
+  <link rel="stylesheet" href="startseite.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Importierte Schriftarten von Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDGizZs0Ym1BDsU-vC2yXg6fWLz70dy_F8",
+    authDomain: "webprog-e7760.firebaseapp.com",
+    databaseURL: "https://webprog-e7760.firebaseio.com",
+    projectId: "webprog-e7760",
+    storageBucket: "webprog-e7760.appspot.com",
+    messagingSenderId: "289724997002"
+  };
+  firebase.initializeApp(config);
+</script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Einbinden von Moment.js-Bibliothek, um auf das aktuelle Datum zugreifen zu können.-->
+  <script src="moment.js"></script>
+  <script>
+    moment().format();
+  </script>
+</head>
+
+
+<body>
+  <!-- Integration einer Navigationsbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="info.html">
+    <img src = "logo.jpg"width="70px" height="70px" alt="logo">         MyPlaner</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Deine Woche <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="erstellen.html">Erstellen</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Erstellen
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="erstellen.html">Aktivität erstellen</a>
+          <a class="dropdown-item" href="#">Notiz erstellen</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Suchen" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suchen</button>
+    </form>
+  </div>
+</nav>
+
+
+  <!-- Für Responsive Design: Tabelle in Container-->
+
+  <div class="container">
+    <h1 id = "ueberschriftstart"> Deine Woche </h1>
+    <text id="wochenangabevon"> </text>
+    <text id="wochenangabeheute"> </text>
+    <text id="wochenangabebis"> </text>
+
+    <div class ="table-responsive">
+      <table class = "table">
+        <thead>
+          <!-- Aufbauen der Spalten -->
+          <tr id="spalten">
+            <th scope="col">Uhrzeit</th>
+            <th scope="col">Montag</th>
+            <th scope= "col">Dienstag</th>
+            <th scope= "col">Mittwoch</th>
+            <th scope= "col">Donnerstag</th>
+            <th scope= "col">Freitag</th>
+            <th scope= "col">Samstag</th>
+            <th scope= "col">Sonntag</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Den Inhalt einfügen.
+          Die gespeicherten Aktivitäten müssen hier rein.-->
+          <tr>
+            <!-- 8:00-10:00 Uhr-->
+            <th scope= "row"  id="uhrzeit">8:00-10:00</th>
+            <th scope= "col"  id="montag"></th>
+            <th scope= "col"  id="dienstag"></th>
+            <th scope= "col"  id="mittwoch"   ></th>
+            <th scope= "col"  id="donnerstag"></th>
+            <th scope= "col"  id= "freitag"></th>
+            <th scope= "col"  id="samstag"></th>
+            <th scope= "col"  id="sonntag"></th>
+          </tr>
+          <tr>
+            <!-- 10:00-12:00 Uhr -->
+            <th scope="row">8:00-9:00</th>
+            <th scope="col" id="mo8-9"></th>
+            <th scope= "col"></th>
+            <th scope= "col"></th>
+            <th scope= "col"></th>
+            <th scope= "col"></th>
+            <th scope= "col"></th>
+            <th scope= "col"></th>
+          </tr>
+          <tr>
+          <!-- 12:00 Uhr - 14:00 Uhr -->
+          <th scope="row">12:00-14:00</th>
+          <th scope="col"></th>
+          <th scope= "col"></th>
+          <th scope= "col"></th>
+          <th scope= "col"></th>
+          <th scope= "col"></th>
+          <th scope= "col"></th>
+          <th scope= "col"></th>
+        </tr>
+        <tr>
+          <!-- 14:00 Uhr - 16:00 Uhr -->
+          <th scope="row">14:00-16:00</th>
+          <th scope="col"></th>
+          <th scope= "col"></th>
+          <th scope= "col"></th>
+          <th scope= "col">Treffen Fallstudie</th>
+          <th scope= "col"></th>
+          <th scope= "col">Spülen</th>
+          <th scope= "col"></th>
+        </tr>
+        <tr>
+          <!-- 16:00 Uhr - 18:00 Uhr -->
+          <th scope="row">16:00-18:00</th>
+          <th scope="col"></th>
+          <th scope= "col"></th>
+          <th scope= "col"></th>
+          <th scope= "col">Wäsche waschen</th>
+          <th scope= "col"></th>
+          <th scope= "col"></th>
+          <th scope= "col"></th>
+        </tr>
+        <!-- 18:00 Uhr bis 20:00 Uhr -->
+        <th scope="row">18:00-20:00</th>
+        <th scope="col"></th>
+        <th scope= "col"></th>
+        <th scope= "col"></th>
+        <th scope= "col"></th>
+        <th scope= "col"></th>
+        <th scope= "col">Essen kochen</th>
+        <th scope= "col"></th>
+      </tr>
+      <tr>
+        <!-- 20:00 Uhr bis 22:00 Uhr -->
+        <th scope="row">20:00-22:00</th>
+        <th scope="col"></th>
+        <th scope= "col"></th>
+        <th scope= "col"></th>
+        <th scope= "col">Schwimmen</th>
+        <th scope= "col"></th>
+        <th scope= "col"></th>
+        <th scope= "col"></th>
+      </tr>
+      <tr>
+        <!-- 22:00 Uhr bis 0:00 Uhr-->
+        <th scope="row">22:00-0:00</th>
+        <th scope="col"></th>
+        <th scope= "col"></th>
+        <th scope= "col"></th>
+        <th scope= "col"></th>
+        <th scope= "col"></th>
+        <th scope= "col"></th>
+        <th scope= "col"></th>
+      </tr>
+    <tr>
+      <!-- 0:00 Uhr bis 2:00 Uhr -->
+      <th scope="row">0:00-2:00</th>
+      <th scope="col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+    </tr>
+    <tr>
+      <!-- 2:00 Uhr bis 4:00 Uhr -->
+      <th scope="row">2:00-4:00</th>
+      <th scope="col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+    </tr
+    <tr>
+      <!-- 4:00 Uhr bis 6:00 Uhr-->
+      <th scope="row">4:00-6:00</th>
+      <th scope="col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col">´</th>
+    </tr>
+    <tr>
+      <!-- 6:00 Uhr bis 8:00 Uhr-->
+      <th scope="row">6:00-8:00</th>
+      <th scope="col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+      <th scope= "col"></th>
+    </tr>
+  </tbody>
+  </table>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>
