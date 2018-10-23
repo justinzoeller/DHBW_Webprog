@@ -1,10 +1,12 @@
 // Abrufen des Formulars
 
-let name = document.getElementById("name").value();
-let tag = document.getElementById("tag").value();
+let name = document.getElementById("name").value;
+let tag = document.getElementById("tag").value;
 let zeitvon = document.getElementById("zeitvon").value;
 let zeitbis = document.getElementById("zeitbis").value;
-let prio = document.getElementById("prio").value();
+let prio = document.getElementById("prio").value;
+let priooption = prio.selectedOptions;
+console.log(priooption)
 
 // Zuordnung der Angaben in das richtige Eingabefeld
 
@@ -18,3 +20,23 @@ function einordnen (name, tag, zeitvon, zeitbis, prio) {
 	document.getElementById("einreichen")
 		.onclick = einordnen;
 }
+
+// Die vom Formular erfassten Daten an Google Firebase weiterleiten
+
+function saveProject() {
+
+  var PostData = {
+  name: document.getElementById("name").value;
+  tag: document.getElementById("tag").value;
+  zeitvon: document.getElementById("zeitvon").value;
+  zeitbis: document.getElementById("zeitbis").value;
+  prio: document.getElementById("prio").value;
+}
+
+var newPostKey = firebase.database().ref().child('posts').push().key;
+
+var updates = {};
+updates['/posts/' + newPostKey] = postData;
+updates['/user-posts/' + uid + '/' + newPostKey] = postData;
+
+return firebase.database().ref().update(updates);
