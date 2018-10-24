@@ -1,43 +1,33 @@
-// Abrufen des Formulars
 
+// Referenz für die Datenbank (Google Firebase)
 
-
-  // Initialize Fi
-
-
-function einreichen(event) {
-  alert("Dein Tag wurde erfolgreich in die Liste aufgenommen");
-    name
-
-  var postData = {
-    name : document.getElementById("name").value,
-    tag : document.getElementById("tag").value,
-    prio : document.getElementById("prio").value,
-    zeitbis : document.getElementById("zeitbis").value,
-    zeitvon : document.getElementById("zeitvon").value,
-  };
-
-var newPostKey = firebase.database().ref().child('posts').push().key;
-var updates = {};
- updates['/posts/' + newPostKey] = postData;
- updates['/user-posts/'+ newPostKey] = postData;
-
- return firebase.database().ref().update(updates);
-}
-
-
-
-// Zuordnung der Angaben in das richtige Eingabefeld
-
-// Anordnung anhand von Tag, Uhrzeit und Name
+var database = firebase.database();
 
 
 window.onload = function () {
   console.log("Dokumente geladen");
-  document.getElementById("ein").addEventListener("click",einreichen(event));
-}
+  document.getElementById("form").onsubmit = function einreichen () {
+    let name = document.getElementById("name").value;
+    let zeitbis = document.getElementById("zeitbis").value;
+    let zeitvon = document.getElementById("zeitvon").value;
+    let prio = document.getElementById("prio").value;
+    let tag = document.getElementById("tag").value;
 
+    // in Google Firebase schreiben
+    var postData = {
+      name: document.getElementById("name").value,
+      tag: document.getElementById("tag").value,
+      zeitvon: document.getElementById("zeitvon").value,
+      zeitbis: document.getElementById("zeitbis").value,
+      prio: document.getElementById("prio").value,
+    };
 
-// Die vom Formular erfassten Daten an Google Firebase weiterleiten
+      var newPostKey = firebase.database().ref().child('posts').push().key;
 
-//function saveProject() {
+      var updates = {};
+      updates['/posts/' + newPostKey] = postData;
+      updates['/user-posts/' + newPostKey] = postData;
+
+      return firebase.database().ref().update(updates);
+    }
+  }

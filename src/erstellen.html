@@ -5,7 +5,6 @@
   <title> MyPlaner - dein digitaler Wochenplaner </title>
   <link rel="stylesheet" href="startseite.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="erstellen.js"></script>
 
   <!-- Importierte Schriftarten von Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
@@ -14,12 +13,6 @@
   <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
 
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-
-  <!-- Google Firebase einbinden -->
 
 <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
 <script>
@@ -34,7 +27,15 @@
   };
   firebase.initializeApp(config);
 </script>
+
+  <script src="erstellen.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
 </head>
+
+
 
 
 <body>
@@ -80,16 +81,16 @@
 <div class="container">
   <h1 class="hauptüberschrift"> Neue Aktivität anlegen </h1>
 
-  <form>
+  <form id="form">
     <!-- Das Element für den Namen der Aktivität -->
     <div class="form-group">
       <label for="name" class ="label">Name deiner Aktivität</label>
       <input type="text" class="form-control" id="name"
-      placeholder="Gib einen Namen für die Aktivität ein.">
+      placeholder="Gib einen Namen für die Aktivität ein."></input>
       <p> </p>
       <small id="nameHelp" class="form-text text-muted">Nimm einen prägnanten Namen, sodass du sofort weißt, um was es sich handelt.</small>
     </div>
-    <dic class="form-group">
+    <div class="form-group">
       <label for="tag" class="label">Tag der Aktivität</label>
       <select class="form-control" id="tag">
         <option>Montag</option>
@@ -162,6 +163,6 @@
       <p> </p>
         <small id="prioHelp" class="form-text text-muted">Wähle eine Priorität aus. Abhängig von der Priorität wird deine Aktivität in "Deine Woche" anders dargestellt.</small>
     </div>
-    <button class="btn-primary" id="ein"> Nimm es in meine Liste auf.</button>
-
+    <button type="submit" value = "submit" class="btn btn-primary" id="ein"> Nimm es in meine Liste auf.</button>
+</div>
 </body>
