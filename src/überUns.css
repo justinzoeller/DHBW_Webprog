@@ -8,10 +8,15 @@ html {
 }
 
 body {
-  background-color: white;
+  
 
-  background-image: url(background2.jpeg);
-  background-size: 2000px 2000px;
+
+
+    background-color: white;
+    background-image: url(test2.jpg.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    margin-bottom: 100%;
 
 
    /* Da eine Woche 7 Tage hat.*/
