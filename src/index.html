@@ -1,0 +1,381 @@
+ <!DOCTYPE html>
+<html>
+<!--  test-->
+
+<head>
+  <meta charset="utf-8"/>
+  <title> MyPlaner - dein digitaler Wochenplaner </title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Importierte Schriftarten von Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Einbinden von Moment.js-Bibliothek, um auf das aktuelle Datum zugreifen zu können.-->
+  <script src="moment.js"></script>
+  <script>
+    moment().format();
+  </script>
+
+
+  <td class="selection">
+    <a onclick="return(doPrintTimetable())" href="$">
+      <img src="print.gif" border="0"/>
+      Ansicht drucken
+    </a>
+  </td>
+
+
+
+
+
+</head>
+
+
+<body>
+  <!-- Integration einer Navigationsbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="info.html">
+    <img src = "logo.jpg"width="30" height="30" alt="">   MyPlaner</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Deine Woche <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="erstellen.html">Erstellen</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Erstellen
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="erstellen.html">Aktivität erstellen</a>
+          <a class="dropdown-item" href="#">Notiz erstellen</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Suchen" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suchen</button>
+    </form>
+  </div>
+</nav>
+
+
+  <!-- Für Responsive Design: Tabelle in Container-->
+
+  <div class="container">
+
+    <div class ="bild">
+  <a title="Startseite" href="file:///C:/Users/Gamze/Documents/GitHub/DHBW_Webprog/src/info.html">
+  <img title="MyPlaner" class="logoHeight" alt="MyPlaner" src="logo.jpg" border="0"  width="150" height="150" align:"left"/>
+  </a>
+  </div>
+
+    <h1 class="üb" id = "ueberschriftstart"> Deine Woche </h1>
+    <h2 class="zweiüb" id = "ueberschriftzwei">den perfekten Überblick haben</h2>
+    <text id="wochenangabevon"> </text>
+    <text id="wochenangabeheute"> </text>
+    <text id="wochenangabebis"> </text>
+
+    <div class ="table-responsive">
+      <table class = "table">
+        <col width="100">
+        <thead>
+          <!-- Aufbauen der Spalten -->
+          <tr id="spalten">
+            <col width="100">
+            <th scope="col" colspan="1,5">Uhrzeit</th>
+            <th scope="col" width="100px" >Montag</th>
+            <th scope= "col" width="100px">Dienstag</th>
+            <th scope= "col" width="100px">Mittwoch</th>
+            <th scope= "col" width="100px">Donnerstag</th>
+            <th scope= "col" width="100px">Freitag</th>
+            <th scope= "col" width="100px">Samstag</th>
+            <th scope= "col" width="100px">Sonntag</th>
+          </tr>
+
+
+
+
+
+
+
+
+
+        </thead>
+        <tbody>
+          <!-- Den Inhalt einfügen.
+          Die gespeicherten Aktivitäten müssen hier rein.-->
+
+
+          <class="notiz" form action="http://www.google.de">
+            <p> Notizen:</p>
+            <textarea name= "comments" cols="20" rows="4"></textarea></form>
+
+
+
+          <tr>
+            <!-- 06:00-07:00 Uhr-->
+            <th scope="row" id="uhrzeit">06:00</th>
+            <th scope= "col"  id="mo6-7"></th>
+            <th scope= "col"  id="di6-7"></th>
+            <th scope= "col"  id="mi6-7"></th>
+            <th scope= "col"  id="do6-7"></th>
+            <th scope= "col"  id="fr6-7"></th>
+            <th scope= "col"  id="sa6-7"></th>
+            <th scope= "col"  id="so6-7"></th>
+            </tr>
+
+
+          <tr>
+              <!-- 07:00-08:00 Uhr-->
+              <th scope="row"  id="uhrzeit">07:00</th>
+              <th scope= "col"  id="mo7-8"></th>
+              <th scope= "col"  id="di7-8"></th>
+              <th scope= "col"  id="mi7-8"></th>
+              <th scope= "col"  id="do7-8"></th>
+              <th scope= "col"  id="fr7-8"></th>
+              <th scope= "col"  id="sa7-8"></th>
+              <th scope= "col"  id="so7-8"></th>
+            </tr>
+
+
+          <tr>
+            <!-- 08:00-09:00 Uhr-->
+            <th scope= "row"  id="uhrzeit">08:00</th>
+            <th scope= "col"  id="mo8-9"></th>
+            <th scope= "col"  id="di8-9"></th>
+            <th scope= "col"  id="mi8-9"></th>
+            <th scope= "col"  id="do8-9"></th>
+            <th scope= "col"  id="fr8-9"></th>
+            <th scope= "col"  id="sa8-9"></th>
+            <th scope= "col"  id="so8-9"></th>
+          </tr>
+          <tr>
+            <!-- 09:00-10:00 Uhr -->
+            <th scope= "row">09:00</th>
+            <th scope= "col" id="mo9-10"></th>
+            <th scope= "col" id="di9-10"></th>
+            <th scope= "col" id="mi9-10"></th>
+            <th scope= "col" id="do9-10"></th>
+            <th scope= "col" id="fr9-10"></th>
+            <th scope= "col" id="sa9-10"></th>
+            <th scope= "col" id="so9-10"></th>
+          </tr>
+          <tr>
+          <!-- 10:00 Uhr - 11:00 Uhr -->
+          <th scope="row">10:00</th>
+          <th scope= "col" id="mo10-11"></th>
+          <th scope= "col" id="di10-11"></th>
+          <th scope= "col" id="mi10-11"></th>
+          <th scope= "col" id="do10-11"></th>
+          <th scope= "col" id="fr10-11"></th>
+          <th scope= "col" id="sa10-11"></th>
+          <th scope= "col" id="so10-11"></th>
+        </tr>
+        <tr>
+          <!-- 11:00 Uhr - 12:00 Uhr -->
+          <th scope="row">11:00</th>
+          <th scope= "col" id="mo11-12"></th>
+          <th scope= "col" id="di11-12"></th>
+          <th scope= "col" id="mi11-12"></th>
+          <th scope= "col" id="do11-12"></th>
+          <th scope= "col" id="fr11-12"></th>
+          <th scope= "col" id="sa11-12"></th>
+          <th scope= "col" id="so11-12"></th>
+        </tr>
+        <tr>
+          <!-- 12:00 Uhr - 13:00 Uhr -->
+          <th scope="row">12:00</th>
+          <th scope= "col" id="mo12-13"></th>
+          <th scope= "col" id="di12-13"></th>
+          <th scope= "col" id="mi12-13"></th>
+          <th scope= "col" id="do12-13"></th>
+          <th scope= "col" id="fr12-13"></th>
+          <th scope= "col" id="sa12-13"></th>
+          <th scope= "col" id="so12-13"></th>
+        </tr>
+        <!-- 13:00 Uhr bis 14:00 Uhr -->
+        <th scope="row">13:00</th>
+        <th scope= "col" id="mo13-14"></th>
+        <th scope= "col" id="di13-14"></th>
+        <th scope= "col" id="mi13-14"></th>
+        <th scope= "col" id="do13-14"></th>
+        <th scope= "col" id="fr13-14"></th>
+        <th scope= "col" id="sa13-14"></th>
+        <th scope= "col" id="so13-14"></th>
+      </tr>
+      <tr>
+        <!-- 14:00 Uhr bis 15:00 Uhr -->
+        <th scope="row">14:00</th>
+        <th scope= "col" id="mo14-15"></th>
+        <th scope= "col" id="di14-15"></th>
+        <th scope= "col" id="mi14-15"></th>
+        <th scope= "col" id="do14-15"></th>
+        <th scope= "col" id="fr14-15"></th>
+        <th scope= "col" id="sa14-15"></th>
+        <th scope= "col" id="so14-15"></th>
+      </tr>
+      <tr>
+        <!-- 15:00 Uhr bis 16:00 Uhr-->
+        <th scope="row">15:00</th>
+        <th scope= "col" id="mo15-16"></th>
+        <th scope= "col" id="di15-16"></th>
+        <th scope= "col" id="mi15-16"></th>
+        <th scope= "col" id="do15-16"></th>
+        <th scope= "col" id="fr15-16"></th>
+        <th scope= "col" id="sa15-16"></th>
+        <th scope= "col" id="so15-16"></th>
+      </tr>
+    <tr>
+      <!-- 16:00 Uhr bis 17:00 Uhr -->
+      <th scope="row">16:00</th>
+      <th scope= "col" id="mo16-17"></th>
+      <th scope= "col" id="di16-17"></th>
+      <th scope= "col" id="mi16-17"></th>
+      <th scope= "col" id="do16-17"></th>
+      <th scope= "col" id="fr16-17"></th>
+      <th scope= "col" id="sa16-17"></th>
+      <th scope= "col" id="so16-17"></th>
+    </tr>
+    <tr>
+      <!-- 17:00 Uhr bis 18:00 Uhr -->
+      <th scope="row">17:00</th>
+      <th scope= "col" id="mo17-18"></th>
+      <th scope= "col" id="di17-18"></th>
+      <th scope= "col" id="mi17-18"></th>
+      <th scope= "col" id="do17-18"></th>
+      <th scope= "col" id="fr17-18"></th>
+      <th scope= "col" id="sa17-18"></th>
+      <th scope= "col" id="so17-18"></th>
+    </tr
+    <tr>
+      <!-- 18:00 Uhr bis 19:00 Uhr-->
+      <th scope="row">18:00</th>
+      <th scope= "col" id="mo18-19"></th>
+      <th scope= "col" id="di18-19"></th>
+      <th scope= "col" id="mi18-19"></th>
+      <th scope= "col" id="do18-19"></th>
+      <th scope= "col" id="fr18-19"></th>
+      <th scope= "col" id="sa18-19"></th>
+      <th scope= "col" id="so18-19"></th>
+    </tr>
+    <tr>
+      <!-- 19:00 Uhr bis 20:00 Uhr-->
+      <th scope="row">19:00</th>
+      <th scope= "col" id="mo19-20"></th>
+      <th scope= "col" id="di19-20"></th>
+      <th scope= "col" id="mi19-20"></th>
+      <th scope= "col" id="do19-20"></th>
+      <th scope= "col" id="fr19-20"></th>
+      <th scope= "col" id="sa19-20"></th>
+      <th scope= "col" id="so19-20"></th>
+    </tr>
+
+    <tr>
+      <!-- 20:00 Uhr bis 21:00 Uhr-->
+      <th scope="row">20:00</th>
+      <th scope= "col" id="mo20-21"></th>
+      <th scope= "col" id="di20-21"></th>
+      <th scope= "col" id="mi20-21"></th>
+      <th scope= "col" id="do20-21"></th>
+      <th scope= "col" id="fr20-21"></th>
+      <th scope= "col" id="sa20-21"></th>
+      <th scope= "col" id="so20-21"></th>
+    </tr>
+
+    <tr>
+      <!-- 21:00 Uhr bis 22:00 Uhr-->
+      <th scope="row">21:00</th>
+      <th scope= "col" id="mo21-22"></th>
+      <th scope= "col" id="di21-22"></th>
+      <th scope= "col" id="mi21-22"></th>
+      <th scope= "col" id="do21-22"></th>
+      <th scope= "col" id="fr21-22"></th>
+      <th scope= "col" id="sa21-22"></th>
+      <th scope= "col" id="so21-22"></th>
+    </tr>
+
+    <tr>
+      <!-- 22:00 Uhr bis 23:00 Uhr-->
+      <th scope="row">22:00</th>
+      <th scope= "col" id="mo22-23"></th>
+      <th scope= "col" id="di22-23"></th>
+      <th scope= "col" id="mi22-23"></th>
+      <th scope= "col" id="do22-23"></th>
+      <th scope= "col" id="fr22-23"></th>
+      <th scope= "col" id="sa22-23"></th>
+      <th scope= "col" id="so22-23"></th>
+    </tr>
+
+    <tr>
+      <!-- 23:00 Uhr bis 24:00 Uhr-->
+      <th scope="row">23:00</th>
+      <th scope= "col" id="mo23-24"></th>
+      <th scope= "col" id="di23-24"></th>
+      <th scope= "col" id="mi23-24"></th>
+      <th scope= "col" id="do23-24"></th>
+      <th scope= "col" id="fr23-24"></th>
+      <th scope= "col" id="sa23-24"></th>
+      <th scope= "col" id="so23-24"></th>
+    </tr>
+    <tr>
+      <!-- 23:00 Uhr bis 24:00 Uhr-->
+      <th scope="row">24:00</th>
+      <th scope= "col" id="mo24"></th>
+      <th scope= "col" id="di24"></th>
+      <th scope= "col" id="mi24"></th>
+      <th scope= "col" id="do24"></th>
+      <th scope= "col" id="fr24"></th>
+      <th scope= "col" id="sa24"></th>
+      <th scope= "col" id="so24"></th>
+    </tr>
+
+
+
+
+
+  </tbody>
+  </table>
+</div>
+</div>
+</div>
+
+
+
+</body>
+<footer>
+<p>
+
+</p>
+<a href="mailto:myplaner@example.de">Kontakt</a>
+<p><a class ="info2" href="info.html">Info</a></p>
+<p><a class="info3" href="erstellen.html">Neues Wochenplan erstellen</a></p>
+<p>© 2018 by AMJG</p>
+
+</footer>
+
+
+
+
+</html>
