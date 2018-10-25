@@ -72,6 +72,24 @@ main{
   display: grid;
   grid-template-columns: 8ch auto;
 }
+<<<<<<< HEAD
+}
+
+/* Anpassungen für die Tabelle
+  bzw. den Wocehenplaner */
+
+table, th, td {
+  border: 1px solid black;
+  padding: 15px;
+
+}
+td{
+  width:20px;
+}
+
+
+=======
+>>>>>>> de395838cdb2f2fcbfb7b05ee05c20dc080cc1f2
 #ueberschriftstart, .hauptüberschrift{
   text-align: center;
   font-family: "Cookie", cursive;
