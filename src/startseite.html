@@ -24,7 +24,8 @@
 <body>
   <!-- Integration einer Navigationsbar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="info.html">MyPlaner</a>
+  <a class="navbar-brand" href="info.html">
+  <img src = "Logo_MyPlaner.png"alt=""/>         MyPlaner</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -58,32 +59,52 @@
     </form>
   </div>
 </nav>
-<h1 class="infoueberschrift"> MyPlaner</h1>
-<p> </p>
-<br />
-<p> </p>
-<h4 class="infohaupt"> Ein Ort für all die Dinge, die du erledigen musst.</h4>
-<br />
-<br />
-<p> </p>
-<p> </p>
-<p> </p>
-<p> </p>
-  <text class="text"> MyPlaner soll dich beim Zeitmanagement unterstützen. Du kannst damit neue Aktivitäten erstellen, diese priorisieren und einen geschätzten Zeitaufwand für diese Aktivitäten festlegen. </text>
+<header>
+    <section class="header">
+      <h1 class="infoueberschrift"> MyPlaner</h1>
+      <br/>
+      <p>Erstelle mit Hilfe von MyPlaner deinen ganz persönlichen Wochenplan.</p>
+    </section>
+      
+</header>
+<main>
+  <section class="Information">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="abschnitt2">
+            <h6 class="infohaupt"> Ein Ort für all die Dinge, die du erledigen musst.</h4>
+            <text class="text"> MyPlaner soll dich beim Zeitmanagement unterstützen. Du kannst damit neue Aktivitäten erstellen, diese priorisieren und einen geschätzten Zeitaufwand für diese Aktivitäten festlegen. </text>     
+        </div>
+       </div>
+      <div class="col-md-6">
+        <img src="zeitmanagement.png" alt="time"/>
+      </div>
+    </div>
+  </section>
+    <div>
+        <h3 class="infohaupt"> Du bist bereit? Dann erstelle deine erste Aktivität! <h3>
+    </div>
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<p> </p>
-<p> </p>
-<p> </p>
-  <h3 class="infohaupt"> Du bist bereit? Dann erstelle deine erste Aktivität! <h3>
-<p> </p>
-<p> </p>
-<p> </p>
-  <a class="infolink" href="erstellen.html"> Ich bin bereit! Los geht's!</a>
-
+    <div class="row">
+      <div class="textblock">
+        <div class="col-md-6">
+          <div class="textblock-content">
+            <p> Bist du bereit, deine Woche zu planen?</p>
+          </div>
+        </div>        
+      </div>
+      
+    <div class="col-md-6">
+      <div class="button">
+        <button class="btn-primary" id="erstellen" onclick="einordnen" >
+         <a class="infolink" href="erstellen.html"> Los geht's!</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+ <div class="row"   
+</footer> 
+</body>
 </html>
