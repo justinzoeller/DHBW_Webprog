@@ -18,6 +18,11 @@ body {
   display: grid;
   grid-template-columns: 8ch auto;
 }
+.notiz{
+
+
+
+}
 }
 
 /* Anpassungen für die Tabelle
@@ -25,11 +30,11 @@ body {
 
 table, th, td {
   border: 1px solid black;
+  border-color: 	#20b2aa;
+border-width: 1px;
+border-style: dotted;
   padding: 15px;
-
-}
-td{
-  width:20px;
+    background-color:rgb(250,240,230) ;
 }
 
 
@@ -37,6 +42,15 @@ td{
   text-align: center;
   font-family: "Cookie", cursive;
   font-size: 8vw;
+}
+.üb{
+  color:white;
+}
+.zweiüb{
+  text-align: center;
+  color:white;
+  font-family: "Sacramento", cursive;
+    font-size: 4vw;
 }
 
 .navbar {
@@ -51,9 +65,10 @@ td{
   font-family: "Neucha", cursive;
 }
 
-#uhrzeit{
-  font-family: "Sacramento", cursive;
-  font-weight: bold;
+.bild{
+  position: relative;
+   top: 10px;
+   left: -330px;
 }
 
 .label {
@@ -76,7 +91,7 @@ td{
   color: white;
 }
 .text {
-  font-family: "Handlee", cursive;
+  font-family: "Cookie", cursive;
   font-size: 3vw;
   text-align: center;
 }
@@ -87,6 +102,7 @@ td{
   text-align: center;
   color: white;
 }
+
 
 .infolink{
   font-family: "Cookie", cursive;
@@ -106,4 +122,8 @@ td{
 #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
   font-family: "Neucha", cursive;
   font-size: 2.5vw;
+}
+}
+
+
 }
