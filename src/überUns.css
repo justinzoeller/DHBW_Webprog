@@ -1,0 +1,167 @@
+/* Hierbei handelt es sich um die CSS-Datei für die Startseite und das Impressum der Anwendung basierend auf Google Material Design */
+
+<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+
+html {
+  font-family: "helvetica neue"
+}
+
+body {
+  background-color: white;
+
+  background-image: url(background2.jpeg);
+  background-size: 2000px 2000px;
+
+
+   /* Da eine Woche 7 Tage hat.*/
+.kalender {
+  display: grid;
+  grid-template-columns: 8ch auto;
+}
+}
+
+/* Anpassungen für die Tabelle
+  bzw. den Wochenplaner */
+
+table, th, td {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+#ueberschriftstart, .hauptüberschrift{
+  text-align: center;
+  font-family: "Cookie", cursive;
+  font-size: 8vw;
+}
+
+.navbar {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-brand {
+  font-family: "Pacifico";
+}
+
+#spalten {
+  font-family: "Neucha", cursive;
+}
+
+#uhrzeit{
+  font-family: "Sacramento", cursive;
+  font-weight: bold;
+}
+
+.label {
+  font-family: "Cookie", cursive;
+  font-size: 4vw;
+}
+
+.einreichen {
+  border: 1px solid blue;
+  font-family: "Cookie", cursive;
+  color: white
+  background-color: blue;
+  text-align: center;
+}
+
+.infohaupt {
+  font-family: "Cookie", cursive;
+  font-size: 5vw;
+  text-align: center;
+  color: white;
+}
+.text {
+  font-family: "Handlee", cursive;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.infoueberschrift {
+  font-family: "Cookie", cursive;
+  font-size: 10vw;
+  text-align: center;
+  color: white;
+}
+
+.infolink{
+  font-family: "Cookie", cursive;
+  font-size: 8vw;
+  text-align: center;
+  color: black;
+
+}
+
+.btn-primary{
+  text-align: center;
+  font-family: "Cookie", cursive;
+  font-size: 2vw;
+  margin-top: 4vw;
+}
+
+.überunsÜberschrift{
+  font-family: "Cookie", cursive;
+  font-size: 10vw;
+  text-align: center;
+  color: white;
+}
+#logo{
+  width:200px;
+  height:150px;
+}
+
+.überunsÜberschrift2{
+  font-family: "Cookie", cursive;
+  font-size: 6vw;
+  color: black;
+  text-align: center;
+}
+.überunsInfo{
+  font-family: "Cookie", cursive;
+  font-size: 4vw;
+  color: black;
+  text-align: center;
+}
+.überunsInfo2{
+  font-family: "Cookie", cursive;
+  font-size: 3vw;
+  text-align: center;
+  color: black;
+  text-align: center;
+}
+.p1{
+  font-family: "Hind", cursive;
+  font-size: 2vw;
+  color: black;
+}
+
+.btn{
+  font-family: "Hind", cursive;
+  font-size: 2vw;
+  color: indigo;
+}
+.bild{
+  width: 60px;
+  height: 50px;
+}
+.quote1{
+  font-family: "Ruthie", cursive;
+  font-size: 5vw;
+  color: indigo;
+  border-color: white;
+  border-width: 5px;
+  border-style: dotted;
+}
+.überunsInfo3{
+  font-family: "Cookie", cursive;
+  font-size: 4vw;
+  color: black;
+  text-align: center;
+}
+
+
+
+#zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp {
+  font-family: "Neucha", cursive;
+  font-size: 2.5vw;
+}
