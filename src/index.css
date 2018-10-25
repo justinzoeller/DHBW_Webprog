@@ -13,15 +13,17 @@ body {
   background-image: url(test2.jpg.jpg);
 
 
+
    /* Da eine Woche 7 Tage hat.*/
 .kalender {
   display: grid;
   grid-template-columns: 8ch auto;
 }
-.notiz{
+.printen{
 
-
-
+  position: relative;
+  top: -16px;
+  right: -100px;
 }
 }
 
@@ -45,6 +47,7 @@ border-style: dotted;
 }
 .üb{
   color:white;
+  .padding-top: 0px !important;
 }
 .zweiüb{
   text-align: center;
@@ -52,13 +55,31 @@ border-style: dotted;
   font-family: "Sacramento", cursive;
     font-size: 4vw;
 }
+.adr{
+  	vertical-align: right;
+  	text-align:right;
+    color:white;
+}
+.plz{
+  vertical-align: right;
+  text-align:right;
+  color:white;
+}
+.land{
+  vertical-align: right;
+  text-align:right;
+  color:white;
+
+}
 
 .navbar {
   font-family: "Roboto", sans-serif;
+  padding-top: 0px !important;
 }
 
 .navbar-brand {
   font-family: "Pacifico";
+  padding-top: 0px !important;
 }
 
 #spalten {
@@ -118,6 +139,19 @@ border-style: dotted;
   font-size: 2vw;
   margin-top: 4vw;
 }
+.info1{
+font-size: 1vw;
+color:white;
+}
+.info2{
+font-size: 1vw;
+color:white;
+}
+.info3{
+font-size: 1vw;
+color:white;
+}
+
 
 #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
   font-family: "Neucha", cursive;
