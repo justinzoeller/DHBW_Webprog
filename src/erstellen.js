@@ -1,20 +1,33 @@
-// Abrufen des Formulars
 
-let name = document.getElementById("name").value();
-let tag = document.getElementById("tag").value();
-let zeitvon = document.getElementById("zeitvon").value;
-let zeitbis = document.getElementById("zeitbis").value;
-let prio = document.getElementById("prio").value();
+// Referenz für die Datenbank (Google Firebase)
 
-// Zuordnung der Angaben in das richtige Eingabefeld
+var database = firebase.database();
 
-// Anordnung anhand von Tag, Uhrzeit und Name
 
-function einordnen (name, tag, zeitvon, zeitbis, prio) {
-  if (tag=="Montag" && zeitvon=="8:00 Uhr" && zeitbis=="9:00 Uhr") {
-    document.getElementById("mo8-9").innerHTML = name;
+window.onload = function () {
+  console.log("Dokumente geladen");
+  document.getElementById("form").onsubmit = function einreichen () {
+    let name = document.getElementById("name").value;
+    let zeitbis = document.getElementById("zeitbis").value;
+    let zeitvon = document.getElementById("zeitvon").value;
+    let prio = document.getElementById("prio").value;
+    let tag = document.getElementById("tag").value;
+
+    // in Google Firebase schreiben
+    var postData = {
+      name: document.getElementById("name").value,
+      tag: document.getElementById("tag").value,
+      zeitvon: document.getElementById("zeitvon").value,
+      zeitbis: document.getElementById("zeitbis").value,
+      prio: document.getElementById("prio").value,
+    };
+
+      var newPostKey = firebase.database().ref().child('posts').push().key;
+
+      var updates = {};
+      updates['/posts/' + newPostKey] = postData;
+      updates['/user-posts/' + newPostKey] = postData;
+
+      return firebase.database().ref().update(updates);
+    }
   }
-  window.onload = function () {
-	document.getElementById("einreichen")
-		.onclick = einordnen;
-}
