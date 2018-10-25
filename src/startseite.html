@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.html">Deine Woche <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="deineWoche.html">Deine Woche <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="erstellen.html">Erstellen</a>
@@ -60,15 +60,15 @@
   </div>
 </nav>
 <header>
-    <section class="header">
-      <h2 class="infoueberschrift"> MyPlaner</h2>
+    <div class="header" id="ebene0" style="min-height:80vh;">
+      <h1 class="infoueberschrift"> MyPlaner</h1>
       <br/>
       <p>Erstelle mit Hilfe von MyPlaner deinen ganz persönlichen Wochenplan.</p>
     </section>
       
 </header>
 <main>
-  <section class="Information">
+  <div class="Information" id="ebene1">
     <div class="row">
       <div class="col-md-6">
         <div class="abschnitt2">
@@ -79,35 +79,31 @@
       <div class="col-md-6">
         <div class="BildMitte">
           <img id="zeit" src="zeitmanagement.png" alt="time"/>
-        </div>
+         </div>
       </div>
     </div>
-  </section>
-  <section class="Information2">
-   <div class="row">
-      <div class="col-md-12">
-       <div class="skills">
-         <p> Mit MyPlaner kannst du...</p>
-        </div>
-      </div>
-  </section>
-    </div>
-  <section class="motiva">
-   <div>
-    <h3 class="infohaupt"> Du bist bereit? Dann erstelle deine erste Aktivität! <h3>
   </div>
-  </section>
-    
-
+  <div class="Information2" id="ebene2">
+      <div class="row">
+         <div class="col-md-12">
+          <div class="skills">
+            <p> Mit MyPlaner kannst du...</p>
+           </div>
+         </div>
+        </div>
+    </div>
+    <div class="Information3" id="ebene3">
+        <h3 class="infohaupt"> Du bist bereit? Dann erstelle deine erste Aktivität! <h3>
+    </div>
+    <div class="Information" id="ebene4">
     <div class="row">
-      <div class="textblock">
-        <div class="col-md-6">
+      <div class="col-md-6">
+        <div class="textblock">
           <div class="textblock-content">
             <p> Bist du bereit, deine Woche zu planen?</p>
           </div>
         </div>        
-      </div>
-      
+      </div> 
     <div class="col-md-6">
       <div class="button">
         <button class="btn-primary" id="erstellen" onclick="einordnen" >
@@ -115,10 +111,10 @@
         </button>
       </div>
     </div>
+    </div>
   </div>
 </main>
-<footer>
- <div class="row"   
+<footer id="ebene5"> 
 </footer> 
 </body>
 </html>
