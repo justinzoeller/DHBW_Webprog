@@ -19,10 +19,11 @@ body {
   display: grid;
   grid-template-columns: 8ch auto;
 }
-.notiz{
+.printen{
 
-
-
+  position: relative;
+  top: -16px;
+  right: -100px;
 }
 }
 
@@ -53,6 +54,22 @@ border-style: dotted;
   color:white;
   font-family: "Sacramento", cursive;
     font-size: 4vw;
+}
+.adr{
+  	vertical-align: right;
+  	text-align:right;
+    color:white;
+}
+.plz{
+  vertical-align: right;
+  text-align:right;
+  color:white;
+}
+.land{
+  vertical-align: right;
+  text-align:right;
+  color:white;
+
 }
 
 .navbar {
@@ -124,12 +141,15 @@ border-style: dotted;
 }
 .info1{
 font-size: 1vw;
+color:white;
 }
 .info2{
 font-size: 1vw;
+color:white;
 }
 .info3{
 font-size: 1vw;
+color:white;
 }
 
 
