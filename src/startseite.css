@@ -9,13 +9,15 @@ html {
 
 body {
   background-color: white;
-
   background-image: url(test2.jpg.jpg);
-
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 100%;
 }
 header{
   background-color: rgba(18, 163, 168, 0.39);
-  height:600px;
+  height:100%;
+  width:100% !important;
   
 }
 .header{
@@ -35,15 +37,31 @@ main{
   margin-right:20px;
 }
 #logo{
-  width:200px;
-  height:150px;
+  width:55px;
+  height:55px;;
 }
 #zeit{
   width:500px;
   height:500px;
+  text-align: center;
+}
+.Information{
+ height:60%;
+ width:100%;
+}
+.Information2{
+  height:60%;
+  width:100%;
 }
 .abschnitt2{
-  
+  padding-top:50px;
+}
+.skills{
+  font-family: "Cookie", cursive;
+  font-size: 4vw;
+  text-align: center;
+  color: white;
+
 }
    /* Da eine Woche 7 Tage hat.*/
 .kalender {
@@ -159,6 +177,9 @@ main{
   padding-right: 10px;
   padding-bottom: 10px;
   padding-top:10px;
+}
+.BildMitte{
+  text-align:center;
 }
 
 
