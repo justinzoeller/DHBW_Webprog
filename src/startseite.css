@@ -4,7 +4,7 @@
 <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
 
 html {
-  font-family: "helvetica neue"
+  font-family: "helvetica neue";
 }
 
 body {
@@ -12,22 +12,40 @@ body {
 
   background-image: url(test2.jpg.jpg);
 
+}
+header{
+  background-color: rgba(18, 163, 168, 0.39);
+  height:500px;
+  
+}
+.header{
+  padding-top:150px;
+  font-family: "Cookie", cursive;
+  text-align:center !important;
+}
+.header p{
+  color:black;
+  font-size: 20px;
 
+}
+main{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left:20px;
+  margin-right:20px;
+}
+img{
+  width:200px;
+  height:150px;
+}
+.abschnitt2{
+  
+}
    /* Da eine Woche 7 Tage hat.*/
 .kalender {
   display: grid;
   grid-template-columns: 8ch auto;
 }
-}
-
-/* Anpassungen für die Tabelle
-  bzw. den Wocehenplaner */
-
-table, th, td {
-  border: 1px solid black;
-  padding: 15px;
-}
-
 #ueberschriftstart, .hauptüberschrift{
   text-align: center;
   font-family: "Cookie", cursive;
@@ -59,20 +77,20 @@ table, th, td {
 .einreichen {
   border: 1px solid blue;
   font-family: "Cookie", cursive;
-  color: white
+  color: white;
   background-color: blue;
   text-align: center;
 }
 
 .infohaupt {
   font-family: "Cookie", cursive;
-  font-size: 5vw;
+  font-size: 4vw;
   text-align: center;
   color: white;
 }
 .text {
   font-family: "Handlee", cursive;
-  font-size: 3vw;
+  font-size: 1.5vw;
   text-align: center;
 }
 
@@ -85,7 +103,7 @@ table, th, td {
 
 .infolink{
   font-family: "Cookie", cursive;
-  font-size: 8vw;
+  font-size: 2.5vw !important;
   text-align: center;
   color: black;
 
@@ -94,11 +112,50 @@ table, th, td {
 .btn-primary{
   text-align: center;
   font-family: "Cookie", cursive;
-  font-size: 2vw;
-  margin-top: 4vw;
+  margin-top: 2vw;
+  padding-left:5px;
+  padding-right:5px;
+  width: auto !important;
+  height: auto !important;
 }
-
+.buttonHead{
+  align-self: center;
+  text-align: center;
+  position:absolute;
+  font-family: "helvetica neue";
+  font-size:1vm;
+}
+.button{
+  text-align: center;
+  position:absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top:10px;
+  font-family: "helvetica neue";
+  font-size:1vm;
+  
+}
 #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
   font-family: "Neucha", cursive;
   font-size: 2.5vw;
 }
+.textblock{
+  margin-left:32px;
+  margin-right: 32px;
+  width:100%; 
+  color:white;
+  font-family: "Cookie", cursive;
+  font-size: 40px;
+}
+.textblock-content{
+  text-align: left;
+  position:absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top:10px;
+}
+
+
+
