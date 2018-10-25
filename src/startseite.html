@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
@@ -63,20 +64,35 @@
   </div>
 </nav>
 <header>
-    <div class="header" id="ebene0" style="min-height:80vh;">
-      <h1 class="infoueberschrift"> MyPlaner</h1>
-      <br/>
-      <p>Erstelle mit Hilfe von MyPlaner deinen ganz persönlichen Wochenplan.</p>
-    </section>
+    <div class="header" id="ebene0" style="min-height:110vh;">
+      <div>
+        </body>
+        <h1 class="infoueberschrift" > MyPlaner</h1>
+        <br/>
+        <p>Erstelle mit Hilfe von MyPlaner deinen ganz persönlichen Wochenplan.</p>
+      </div>
+      <div class="button"style="text-align: center; padding-right: 7%">
+          <button class="btn btn-primary2" id="erstellen" onclick="einordnen">
+           <a class="infolink" href="erstellen.html"> Los geht's!</a>
+          </button>
+      </div>
+      
+    </div>
 
 </header>
 <main>
-  <div class="Information" id="ebene1">
+  <div class="Information" id="ebene1"style="min-height:100vh;">
     <div class="row">
       <div class="col-md-6">
         <div class="abschnitt2">
             <h6 class="infohaupt"> Ein Ort für all die Dinge, die du erledigen musst.</h4>
-            <text class="text"> MyPlaner soll dich beim Zeitmanagement unterstützen. Du kannst damit neue Aktivitäten erstellen, diese priorisieren und einen geschätzten Zeitaufwand für diese Aktivitäten festlegen. </text>
+            <text class="text">
+             Zeitmanagement ist das A und O für eine erfolgreiche Woche <br/>
+             und ein erfolgreiches Leben.<br/> 
+             Wir wollen dich genau dabei unterstützen!<br/>  
+             Das heißt: mehr Produktivität, Motivation, Leistung, Disziplin und Ordnung im Alltag! <br/> 
+             
+             </text>
         </div>
        </div>
       <div class="col-md-6">
@@ -86,36 +102,50 @@
       </div>
     </div>
   </div>
-  <div class="Information2" id="ebene2">
+  <div class="Information2" id="ebene2"style="min-height:100vh;">
       <div class="row">
          <div class="col-md-12">
           <div class="skills">
-            <p> Mit MyPlaner kannst du...</p>
+            <h1> Mit MyPlaner kannst du...<br/></h1>
            </div>
          </div>
+         <div class="col-md-6">
+           <div class="activity">
+              <img src="activity.png" alt="activity" width="30px" height="30px"/><br/>
+              <h4 style="font-weight:bold;">Aktivitäten erstellen</h4> <br/>
+              <p>MyPlaner bietet dir die Möglichkeit deine Aktivitäten selbst zu benennen <br/>
+                 und Individuell zu gestalten!</p>
+           </div>
         </div>
-    </div>
-    <div class="Information3" id="ebene3">
-        <h3 class="infohaupt"> Du bist bereit? Dann erstelle deine erste Aktivität! <h3>
-    </div>
-    <div class="Information" id="ebene4">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="textblock">
-          <div class="textblock-content">
-            <p> Bist du bereit, deine Woche zu planen?</p>
+        <div class="col-md-6">
+          <div class="priority">
+              <img src="priority.png" alt="activity" width="30px" height="30px"/><br/>
+              <h4 style="font-weight:bold;">Aktivitäten priorisieren</h4> <br/>
+              <p>Deine erstellten Aktivitäten kannst du außerdem priorisieren. <br/>
+                 Durch deine individuelle Priorisierung kannst du auch an Tagen, <br/>
+                 an denen du viel zutun hast, abwägen, welche Aufgaben am Wichtigsten sind.
+              </p>
           </div>
-<<<<<<< HEAD
-        </div>        
-      </div> 
-=======
         </div>
-      </div>
-
->>>>>>> cada96deaae5d9a06b5cbda54cbad11c8556d3ec
-    <div class="col-md-6">
-      <div class="button">
-        <button class="btn-primary" id="erstellen" onclick="einordnen" >
+        <div class="col-md-12">
+          <div class="time">
+              <img src="time.png" alt="activity" width="30px" height="30px"/><br/>
+              <h4 style="font-weight:bold;">Zeitaufwände planen</h4> <br/>
+              <p>Um deinen Tag besser strukturieren zu können, bieten wir dir die Möglichkeit <br/>
+               für deine Aktivitäten Zeitaufwände stündlich zu Planen.
+            </p>
+          </div>
+        </div>
+    </div>
+    </div>
+    <div class="Information3" id="ebene3"style="min-height:20vh;">
+        <h3 class="infohaupt"> Du bist bereit? Dann erstelle jetzt deine erste Aktivität! <h3>
+    </div>
+    <div class="Information" id="ebene4"style="min-height:40vh;">
+    <div class="row">
+    <div class="col-md-12">
+      <div class="button" style="text-align: center; padding-right: 7%">
+        <button class="btn btn-primary2" id="erstellen" onclick="einordnen" >
          <a class="infolink" href="erstellen.html"> Los geht's!</a>
         </button>
       </div>
@@ -123,13 +153,12 @@
     </div>
   </div>
 </main>
-<<<<<<< HEAD
-<footer id="ebene5"> 
+
+<footer id="ebene5"style="min-height:10vh;"> 
 </footer> 
-=======
+
 <footer>
- <div class="row"
+
 </footer>
->>>>>>> cada96deaae5d9a06b5cbda54cbad11c8556d3ec
 </body>
 </html>
