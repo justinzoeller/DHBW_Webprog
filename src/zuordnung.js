@@ -25,21 +25,22 @@ window.onload = function () {
       // Prioritätsprüfung & - darstellung
 
       if (webprog[i].prio == "keine Priorität") {
-        // Wenn keine Priorität, keine zusätzlichen Zeichen
+        // Wenn keine Priorität, keine zusätzliche Zeichen
         document.getElementById("mo8-9").innerHTML = webprog[i].name;
       }
 
       if (webprog[i].prio == "wenig Priorität") {
-        // Wenn wenig Priorität, nur ein Ausrufzeichen
+        // Wenn wenig Priorität, nur ein Ausrufezeichen
         document.getElementById("mo8-9").innerHTML = webprog[i].name + " " + "!";
       }
 
       if (webprog[i].prio == "mittlere Priorität") {
-        // Wenn mittlere Priorität, zwei Ausrufzeichen
+        // Wenn mittlere Priorität, dann zwei Ausrufezeichen
         document.getElementById("mo8-9").innerHTML = webprog[i].name + " " + "!!";
       }
 
       if (webprog[i].prio == "hohe Priorität") {
+        // Wenn hohe Priorität, dann drei Ausrufezeichen
         document.getElementById("mo8-9").innerHTML = webprog[i].name + " " + "!!!";
       }
 
