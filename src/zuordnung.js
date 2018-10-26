@@ -205,11 +205,6 @@ window.onload = function () {
 
 
 
-
-
-
-
-
       // Donnerstag, 6-7
                 if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "6:00 Uhr" && webprog[i].zeitbis =="7:00 Uhr") {
 
@@ -292,7 +287,46 @@ do2.appendChild(do2l4);  // Listenelement dem Feld anhängen
 
 }
 
+//Donnerstag 8-9
+if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "8:00 Uhr" && webprog[i].zeitbis =="9:00 Uhr") {
 
+if (webprog[i].prio == "keine Priorität") {
+// Wenn keine Priorität, keine zusätzliche Zeichen
+var do3l1 = document.createElement("li");
+var do3p1 = document.createTextNode(webprog[i].name);
+do3l1.appendChild(do3p1);
+do3.appendChild(do3l1);
+}
+
+if (webprog[i].prio == "wenig Priorität") {
+// Wenn wenig Priorität, nur ein Ausrufezeichen
+var do3l2 = document.createElement("li");
+var do3p2 = document.createTextNode(webprog[i].name + " " + "!" );
+do3l2.appendChild(do3p2);
+do3.appendChild(do3l2);
+}
+
+if (webprog[i].prio == "mittlere Priorität") {
+// Wenn mittlere Priorität, dann zwei Ausrufezeichen
+var do3l3 = document.createElement("li");
+var do3p3 = document.createTextNode(webprog[i].name + " " + "!!");
+do3l3.appendChild(do3p3);
+do3.appendChild(do3l3);
+
+}
+
+if (webprog[i].prio == "hohe Priorität") {
+// Wenn hohe Priorität, dann drei Ausrufezeichen
+var do3l4 = document.createElement("li"); // Listenelement anlegen
+var do3p4 = document.createTextNode(webprog[i].name + " " + "!!!");
+do3l4.appendChild(do3p4); // dem Listenelement Text anhängen
+do3.appendChild(do3l4);  // Listenelement dem Feld anhängen
+}
+
+}
+
+}
+//Donnerstag9-10
 
 
 
