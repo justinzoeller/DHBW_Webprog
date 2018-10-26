@@ -21,7 +21,7 @@ window.onload = function () {
     var webprog = snapshot.val();
 
   // aus der Datenbank auslesen
-  for (i in webprog){
+  for (i in webprog){  //muss bleiben, alles drunter
 
     if (webprog[i].tag == "Montag" && webprog[i].zeitvon == "8:00 Uhr" && webprog[i].zeitbis =="9:00 Uhr") {
 
