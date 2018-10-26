@@ -163,7 +163,17 @@ table, th, td {
   color: black;
   text-align: center;
 }
+#j1, #j3{
+  background-color: #E0FFFF;
+}
 
+#j2, #j4{
+  background-color: #FFFAF0;
+}
+
+#M,#F,#E {
+  text-decoration: underline;
+}
 
 
 #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp {
