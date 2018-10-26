@@ -14,6 +14,9 @@ body {
   background-size: 100% 100%;
   margin-bottom: 100%;
 }
+p{
+  font-family: 'Crimson Text', serif !important;
+}
 header{
   background-color: rgba(18, 163, 168, 0.39);
   height:100%;
@@ -35,7 +38,6 @@ header{
 
 main{
   margin-top: 50px;
-  margin-bottom: 50px;
   margin-left:20px;
   margin-right:20px;
 
@@ -56,15 +58,25 @@ main{
 .Information2{
   height:60%;
   width:100%;
+  background-color:rgba(187, 211, 213, 0.5);
+}
+.Information3{
+  margin-top:100px;
+
 }
 .abschnitt2{
   padding-top:50px;
 }
 .skills{
-  font-family: "Cookie", cursive;
-  font-size: 4vw;
+  font-family: "Cookie", cursive !important;
+  margin-top:50px;
+  margin-bottom: 20px;
   text-align: center;
   color: white;
+
+}
+.skills>h1{
+  font-size:60px;
 
 }
    /* Da eine Woche 7 Tage hat.*/
@@ -72,8 +84,7 @@ main{
   display: grid;
   grid-template-columns: 8ch auto;
 }
-<<<<<<< HEAD
-}
+
 
 /* Anpassungen für die Tabelle
   bzw. den Wocehenplaner */
@@ -87,9 +98,6 @@ td{
   width:20px;
 }
 
-
-=======
->>>>>>> de395838cdb2f2fcbfb7b05ee05c20dc080cc1f2
 #ueberschriftstart, .hauptüberschrift{
   text-align: center;
   font-family: "Cookie", cursive;
@@ -133,9 +141,9 @@ td{
   color: white;
 }
 .text {
-  font-family: "Handlee", cursive;
+  font-family: 'Crimson Text', serif;
   font-size: 1.5vw;
-  text-align: center;
+  text-align: center !important;
 }
 
 .infoueberschrift {
@@ -150,18 +158,53 @@ td{
   font-size: 2.5vw !important;
   text-align: center;
   color: black;
+  text-decoration: none;
 
 }
+
+
+.infolink:hover{
+  font-family: "Cookie", cursive;
+  font-size: 2.5vw !important;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+
+}
+
 
 .btn-primary{
   text-align: center;
   font-family: "Cookie", cursive;
   margin-top: 2vw;
-  padding-left:5px;
-  padding-right:5px;
   width: auto !important;
   height: auto !important;
+  background-color: white !important;
+  border:none !important;
 }
+
+
+.btn-primary2{
+  align-self: center !important;
+  text-align: center;
+  font-family: "Cookie", cursive;
+  margin-top: 2vw;
+  width: auto !important;
+  height: auto !important;
+  background-color: white !important;
+  border:none !important;
+  margin-left:auto !important;
+  margin-right:auto !important;
+  position: absolute !important;
+
+}
+
+
+.btn-primary2:hover{
+  background-image: radial-gradient(circle farthest-side, rgba(18, 163, 168, 0.5), transparent)!important;
+  transition: all 0.5s ease-in;
+}
+
 .buttonHead{
   align-self: center;
   text-align: center;
@@ -170,10 +213,7 @@ td{
   font-size:1vm;
 }
 .button{
-  text-align: center;
-  position:absolute;
-  padding-left: 10px;
-  padding-right: 10px;
+  
   padding-bottom: 10px;
   padding-top:10px;
   font-family: "helvetica neue";
@@ -183,15 +223,6 @@ td{
 #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
   font-family: "Neucha", cursive;
   font-size: 2.5vw;
-}
-.textblock{
-  margin-left:32px;
-  margin-right: 32px;
-  width:100%; 
-  height:20%;
-  color:white;
-  font-family: "Cookie", cursive;
-  font-size: 40px;
 }
 .textblock-content{
   text-align: left;
@@ -203,6 +234,12 @@ td{
 }
 .BildMitte{
   text-align:center;
+}
+.activity, .time,.priority{
+font-size:1vm;
+font-family: 'Crimson Text', serif;
+font-weight:bold;
+text-align: center;
 }
 
 
