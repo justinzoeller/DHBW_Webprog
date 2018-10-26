@@ -22,6 +22,18 @@ window.onload = function () {
 
 
 
+
+
+
+
+
+
+
+  // Gamze Variablen
+
+
+
+
   // Firebase einbinden
   var database = firebase.database();
   var rootRef = firebase.database().ref("posts");
