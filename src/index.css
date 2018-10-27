@@ -9,9 +9,10 @@ html {
 
 body {
   background-color: white;
-
   background-image: url(test2.jpg.jpg);
-
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 100%;
 
 
    /* Da eine Woche 7 Tage hat.*/
@@ -58,17 +59,17 @@ border-style: dotted;
 .adr{
   	vertical-align: right;
   	text-align:right;
-    color:white;
+    color:black;
 }
 .plz{
   vertical-align: right;
   text-align:right;
-  color:white;
+  color:black;
 }
 .land{
   vertical-align: right;
   text-align:right;
-  color:white;
+  color:black;
 
 }
 
@@ -141,17 +142,31 @@ border-style: dotted;
 }
 .info1{
 font-size: 1vw;
-color:white;
+color:black;
 }
 .info2{
 font-size: 1vw;
-color:white;
+color:black;
 }
 .info3{
 font-size: 1vw;
-color:white;
+color:black;
 }
 
+.letztezeile{
+  color:black;
+}
+
+.letzte{
+   background-size: "100%"
+   width:"100%"
+
+}
+
+
+#letzte{
+  color:white;
+}
 
 #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
   font-family: "Neucha", cursive;
