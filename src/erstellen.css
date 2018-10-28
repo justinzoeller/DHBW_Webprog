@@ -4,23 +4,56 @@
 
 .html {
   background-color: white;
-  background-image: url(ozean.jpg);
-  backgorund-size: 100% 100%;
+  background-image: url(test2.jpg.jpg);
 
+
+}
+
+.hauptüberschrift {
+  font-family: "Cookie";
+  text-align: center;
+  color: white;
 }
 
 
 .label {
   font-family: "Cookie", cursive;
-  font-size: 4vw;
+  font-size: 30px;
 }
 
 #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
   font-family: "Roboto";
-  font-size: 0.5vw;
+  font-size: 15px;
 }
 
 #priobild {
   max-width: 4vw;
   max-height: 5vw;
+}
+
+
+
+
+#info {
+  font-size: 18px;
+  font-family: "Krub", sans-serif;
+}
+
+#infologo {
+  max-width: 5vw;
+  max-height: 5vw;
+}
+
+#ein {
+  text-align: center;
+  font-family: "Cookie", cursive;
+  font-size: 25px;
+  align-content: center;
+
+}
+
+#formularganz {
+  background-color: white;
+  background-image: url(test2.jpg.jpg);
+
 }
