@@ -23,7 +23,7 @@ header{
   height:100%;
   width:100% !important;
 ;
-  
+
 }
 .header{
   padding-top:150px;
@@ -68,7 +68,7 @@ main{
   padding-top:200px;
   padding-right:100px;
   padding-left:100px;
-  
+
 }
 .Information4{
   margin-top:100px;
@@ -131,7 +131,7 @@ td{
 nav{
   position:fixed !important;
   width:100%;
-  background-color:rgb(179, 179, 179); 
+  background-color:rgb(179, 179, 179);
 }
 .navbar {
   font-family: "Roboto", sans-serif;
@@ -243,12 +243,12 @@ nav{
   font-size:1vm;
 }
 .button{
-  
+
   padding-bottom: 10px;
   padding-top:10px;
   font-family: "helvetica neue";
   font-size:1vm;
-  
+
 }
 #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
   font-family: "Neucha", cursive;
@@ -272,6 +272,3 @@ font-family: "Hind", cursive;
 font-weight:bold;
 text-align: center;
 }
-
-
-
