@@ -2,7 +2,7 @@
 
 }
 
-.body {
+.html {
   background-color: white;
   background-image: url(ozean.jpg);
   backgorund-size: 100% 100%;
@@ -12,10 +12,15 @@
 
 .label {
   font-family: "Cookie", cursive;
-  font-size: 6vw;
+  font-size: 4vw;
 }
 
 #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
   font-family: "Roboto";
-  font-size: 2vw;
+  font-size: 0.5vw;
+}
+
+#priobild {
+  max-width: 4vw;
+  max-height: 5vw;
 }
