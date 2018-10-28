@@ -3753,7 +3753,7 @@ for (i in webprog) {
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
       var fr9l1 = document.createElement("li");
-      var fr9p1 = document.createTextNode(webprog[i].name);
+      var fr93p1 = document.createTextNode(webprog[i].name);
       fr9l1.appendChild(fr9p1);
       fr9.appendChild(fr9l1);
     }
