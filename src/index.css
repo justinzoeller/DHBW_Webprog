@@ -19,12 +19,18 @@
 body {
   background-color: white;
   background-image: url(test2.jpg.jpg);
+<<<<<<< HEAD
 
   /* Da eine Woche 7 Tage hat.*/
   .kalender {
     display: grid;
     grid-template-columns: 8ch auto;
   }
+=======
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 100%;
+>>>>>>> 88a5ed2f3e353a42ddbaecbeb3e91859e53182e3
 
   .printen {
     position: relative;
@@ -59,20 +65,39 @@ table, th, td {
   text-align: center;
   color: white;
   font-family: "Sacramento", cursive;
+<<<<<<< HEAD
   font-size: 4vw;
+=======
+    font-size: 4vw;
+}
+.adr{
+  	vertical-align: right;
+  	text-align:right;
+    color:black;
+>>>>>>> 88a5ed2f3e353a42ddbaecbeb3e91859e53182e3
 }
 
 .adr {
   vertical-align: right;
+<<<<<<< HEAD
   text-align: right;
   color: white;
+=======
+  text-align:right;
+  color:black;
+>>>>>>> 88a5ed2f3e353a42ddbaecbeb3e91859e53182e3
 }
 
 .plz {
   vertical-align: right;
+<<<<<<< HEAD
   text-align: right;
   color: white;
 }
+=======
+  text-align:right;
+  color:black;
+>>>>>>> 88a5ed2f3e353a42ddbaecbeb3e91859e53182e3
 
 .land {
   vertical-align: right;
@@ -145,6 +170,7 @@ table, th, td {
   font-size: 2vw;
   margin-top: 4vw;
 }
+<<<<<<< HEAD
 
 .info1 {
   font-size: 1vw;
@@ -159,6 +185,34 @@ table, th, td {
 .info3 {
   font-size: 1vw;
   color: white;
+=======
+.info1{
+font-size: 1vw;
+color:black;
+}
+.info2{
+font-size: 1vw;
+color:black;
+}
+.info3{
+font-size: 1vw;
+color:black;
+}
+
+.letztezeile{
+  color:black;
+}
+
+.letzte{
+   background-size: "100%"
+   width:"100%"
+
+}
+
+
+#letzte{
+  color:white;
+>>>>>>> 88a5ed2f3e353a42ddbaecbeb3e91859e53182e3
 }
 
 #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {

@@ -3,6 +3,7 @@
 <!--  test-->
 
 <head>
+
   <meta charset="utf-8"/>
   <title> MyPlaner - dein digitaler Wochenplaner </title>
   <link rel="stylesheet" href="index.css">
@@ -28,6 +29,7 @@
     };
     firebase.initializeApp(config);
   </script>
+<!-- attribute specifies the URL of an external script file-->
 
   <script src = "zuordnung.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -40,15 +42,6 @@
     moment().format();
   </script>
 
-
-<!--
-  <td class="selection">
-    <a onclick="return(doPrintTimetable())" href="$">
-      <img src="print.gif" border="0"/>
-      Ansicht drucken
-    </a>
-  </td>
--->
 
 
 
@@ -63,14 +56,17 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="startseite.html">
-    <img src = "Logo_MyPlaner.png"width="30" height="30" alt="">   MyPlaner</a>
+    <img src = "Logo_MyPlaner.png"width="30" height="30" alt="" >   MyPlaner</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
+<!--same class attribute will have the same format and style -->
+<!--div  Block-Element nimmt die komplette Breite ein -->
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
+        <!--span innerhalb des textes zb hervorheben -->
         <a class="nav-link" href="index.html">Deine Woche <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
@@ -107,12 +103,12 @@
 
 
   <!-- Für Responsive Design: Tabelle in Container-->
-
+<!--padding innenabstand -->
   <div class="container" style="padding-top:0% !important">
 <div class="row">
     <div class ="col-md-2 bild">
   <a title="Startseite" href="startseite.html">
-  <img title="MyPlaner" class="logoHeight" alt="MyPlaner" src="Logo_MyPlaner.png" border="0"  width="500" height="400" align:"left"/> </a>
+  <img title="MyPlaner" class="logoHeight" alt="MyPlaner" src="Logo_MyPlaner.png" border="0"  width="400" height="400" align:"center"/> </a>
   </div>
 
     <div class ="col-md-8 titelschrift">
@@ -123,19 +119,19 @@
     <text id="wochenangabebis"> </text>
   </div>
 
-<!--
+
 
   <div class ="col-md-2">
     <div class="" style="position:absolute">
       <td class="selection" style="position: absolute; top: 0px; right:0px">
-    <a class="printen" onclick="return(doPrintTimetable())" href="$">
-      <img src="print.jpg"  style="position: absolute; top: 0px; right:-660px" width="80" height="80" align:"right" alt="" />
+    <a class="printen" onclick="window.print();" href="index.html">
+      <img src="print.jpg"  style="position: absolute; top: 0px; right:-660px" width="80" height="80" align:"right" alt="" id="printlogo" />
     </a>
     </td>
 
     </div>
 </div>
--->
+
 
 </div>
 
@@ -146,11 +142,11 @@
         <col width="100">
         <thead>
           <!-- Aufbauen der Spalten -->
-          <tr id="spalten">
+          <tr id="spalten"> <!--neue Tabellenzeile -->
             <col width="100">
-            <th scope="col" colspan="1,5">Uhrzeit</th>
-            <th scope="col" width="100px" >Montag</th>
-            <th scope= "col" width="100px">Dienstag</th>
+            <th scope="col" colspan="1,5">Uhrzeit</th> <!--kopfzelle  -->
+            <th scope="col" width="100px" >Montag</th> <!-- col header für spalte -->
+            <th scope= "col" width="100px">Dienstag</th><!-- scope Bezug zwischen Kopf- und Datenzellen herstellen -->
             <th scope= "col" width="100px">Mittwoch</th>
             <th scope= "col" width="100px">Donnerstag</th>
             <th scope= "col" width="100px">Freitag</th>
@@ -160,25 +156,16 @@
 
 
 
-
-
-
-
-
-
         </thead>
         <tbody>
           <!-- Den Inhalt einfügen.
           Die gespeicherten Aktivitäten müssen hier rein.-->
 
 
-
-
-
           <tr>
             <!-- 06:00-07:00 Uhr-->
-            <th scope="row" id="uhrzeit">06:00</th>
-            <th scope= "col"  id="mo6-7"></th>
+            <th scope="row" id="uhrzeit">06:00</th> <!--row header für reihe -->
+            <th scope= "col"  id="mo6-7"></th> <!-- id wenn keine klasse, nur einmal benutzen  -->
             <th scope= "col"  id="di6-7"></th>
             <th scope= "col"  id="mi6-7"></th>
             <th scope= "col"  id="do6-7"></th>
@@ -426,9 +413,9 @@
     <p>GERMANY</p>
 </div>
 
-<img  class="globusbild"  src="globus.jpg" border="0"  width="20" height="20" align:"top"/> Deutsch</a>
+<img  class="globusbild"  src="globus.jpg" border="0"  width="20" height="20" align:"top" / id="letzte"  ;> Deutsch</a>
 
-<p>© 2018 by MyPlaner</p>
+<p class="letztezeile">© 2018 by MyPlaner</p>
 
 </footer>
 
