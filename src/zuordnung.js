@@ -172,7 +172,7 @@ window.onload = function () {
 
 
   // Gamze Variablen
-//donnerstag
+//Donnerstag
 
   var do1 = document.createElement("ul");
   document.getElementById("do6-7").appendChild(do1);
@@ -2643,7 +2643,7 @@ for (i in webprog) {
 
 for (i in webprog){
 
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "6:00 Uhr" && webprog[i].zeitbis =="7:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "6:00 Uhr" && webprog[i].zeitbis =="7:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -2684,11 +2684,11 @@ for (i in webprog){
 }
 
 
-// donnerstag, 7 bis 8
+// Donnerstag, 7 bis 8
 
 for (i in webprog){
 
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "7:00 Uhr" && webprog[i].zeitbis =="8:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "7:00 Uhr" && webprog[i].zeitbis =="8:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -2728,11 +2728,11 @@ for (i in webprog){
 
 }
 
-// donnerstag, 8 bis 9
+// Donnerstag, 8 bis 9
 
   for (i in webprog){
 
-    if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "8:00 Uhr" && webprog[i].zeitbis =="9:00 Uhr") {
+    if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "8:00 Uhr" && webprog[i].zeitbis =="9:00 Uhr") {
 
       if (webprog[i].prio == "keine Priorität") {
         // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -2772,9 +2772,9 @@ for (i in webprog){
 
   }
 
-// donnerstag, 9 bis 10
+// Donnerstag, 9 bis 10
   for (i in webprog) {
-    if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "9:00 Uhr" && webprog[i].zeitbis =="10:00 Uhr") {
+    if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "9:00 Uhr" && webprog[i].zeitbis =="10:00 Uhr") {
 
       if (webprog[i].prio == "keine Priorität") {
         // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -2814,10 +2814,10 @@ for (i in webprog){
   }
 
 
-// donnerstag, 10 bis 11
+// Donnerstag, 10 bis 11
 
 for (i in webprog) {
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "10:00 Uhr" && webprog[i].zeitbis =="11:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "10:00 Uhr" && webprog[i].zeitbis =="11:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -2856,10 +2856,10 @@ for (i in webprog) {
   }
 }
 
-// donnerstag, 11 bis 12
+// Donnerstag, 11 bis 12
 
 for (i in webprog) {
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "11:00 Uhr" && webprog[i].zeitbis =="12:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "11:00 Uhr" && webprog[i].zeitbis =="12:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -2898,10 +2898,10 @@ for (i in webprog) {
   }
 }
 
-// donnerstag, 12 bis 13
+// Donnerstag, 12 bis 13
 
 for (i in webprog) {
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "12:00 Uhr" && webprog[i].zeitbis =="13:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "12:00 Uhr" && webprog[i].zeitbis =="13:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -2940,10 +2940,10 @@ for (i in webprog) {
   }
 }
 
-// donnerstag, 13 bis 14
+// Donnerstag, 13 bis 14
 
 for (i in webprog) {
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "13:00 Uhr" && webprog[i].zeitbis =="14:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "13:00 Uhr" && webprog[i].zeitbis =="14:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -2982,10 +2982,10 @@ for (i in webprog) {
   }
 }
 
-// donnerstag, 14 bis 15
+// Donnerstag, 14 bis 15
 
 for (i in webprog) {
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "14:00 Uhr" && webprog[i].zeitbis =="15:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "14:00 Uhr" && webprog[i].zeitbis =="15:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3024,10 +3024,10 @@ for (i in webprog) {
   }
 }
 
-// donnerstag, 15 bis 16
+// Donnerstag, 15 bis 16
 
 for (i in webprog) {
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "15:00 Uhr" && webprog[i].zeitbis =="16:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "15:00 Uhr" && webprog[i].zeitbis =="16:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3067,10 +3067,10 @@ for (i in webprog) {
 }
 
 
-// donnerstag, 16-17
+// Donnerstag, 16-17
 
 for (i in webprog) {
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "16:00 Uhr" && webprog[i].zeitbis =="17:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "16:00 Uhr" && webprog[i].zeitbis =="17:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3109,10 +3109,10 @@ for (i in webprog) {
   }
 }
 
-// donnerstag, 17 bis 18
+// Donnerstag, 17 bis 18
 
 for (i in webprog) {
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "17:00 Uhr" && webprog[i].zeitbis =="18:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "17:00 Uhr" && webprog[i].zeitbis =="18:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3151,10 +3151,10 @@ for (i in webprog) {
   }
 }
 
-// donnerstag, 18 bis 19
+// Donnerstag, 18 bis 19
 
 for (i in webprog) {
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "18:00 Uhr" && webprog[i].zeitbis =="19:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "18:00 Uhr" && webprog[i].zeitbis =="19:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3193,10 +3193,10 @@ for (i in webprog) {
   }
 }
 
-// donnerstag, 19 bis 20
+// Donnerstag, 19 bis 20
 
 for (i in webprog) {
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "19:00 Uhr" && webprog[i].zeitbis =="20:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "19:00 Uhr" && webprog[i].zeitbis =="20:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3235,10 +3235,10 @@ for (i in webprog) {
   }
 }
 
-// donnerstag, 20 bis 21
+// Donnerstag, 20 bis 21
 
 for (i in webprog) {
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "20:00 Uhr" && webprog[i].zeitbis =="22:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "20:00 Uhr" && webprog[i].zeitbis =="22:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3277,10 +3277,10 @@ for (i in webprog) {
   }
 }
 
-// donnerstag, 21 bis 22
+// Donnerstag, 21 bis 22
 
 for (i in webprog) {
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "21:00 Uhr" && webprog[i].zeitbis =="22:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "21:00 Uhr" && webprog[i].zeitbis =="22:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3317,10 +3317,10 @@ for (i in webprog) {
   }
 }
 
-// donnerstag, 22 bis 23
+// Donnerstag, 22 bis 23
 
 for (i in webprog) {
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "22:00 Uhr" && webprog[i].zeitbis =="23:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "22:00 Uhr" && webprog[i].zeitbis =="23:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3359,10 +3359,10 @@ for (i in webprog) {
   }
 }
 
-// donnerstag, 23 bis 24
+// Donnerstag, 23 bis 24
 
 for (i in webprog) {
-  if (webprog[i].tag == "donnerstag" && webprog[i].zeitvon == "23:00 Uhr" && webprog[i].zeitbis =="24:00 Uhr") {
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "23:00 Uhr" && webprog[i].zeitbis =="24:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3403,10 +3403,10 @@ for (i in webprog) {
 }
 
 
-//freitag
+//Freitag
 for (i in webprog){
 
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "6:00 Uhr" && webprog[i].zeitbis =="7:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "6:00 Uhr" && webprog[i].zeitbis =="7:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3447,11 +3447,11 @@ for (i in webprog){
 }
 
 
-// freitag, 7 bis 8
+// Freitag, 7 bis 8
 
 for (i in webprog){
 
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "7:00 Uhr" && webprog[i].zeitbis =="8:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "7:00 Uhr" && webprog[i].zeitbis =="8:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3491,11 +3491,11 @@ for (i in webprog){
 
 }
 
-// freitag, 8 bis 9
+// Freitag, 8 bis 9
 
   for (i in webprog){
 
-    if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "8:00 Uhr" && webprog[i].zeitbis =="9:00 Uhr") {
+    if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "8:00 Uhr" && webprog[i].zeitbis =="9:00 Uhr") {
 
       if (webprog[i].prio == "keine Priorität") {
         // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3535,9 +3535,9 @@ for (i in webprog){
 
   }
 
-// freitag, 9 bis 10
+// Freitag, 9 bis 10
   for (i in webprog) {
-    if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "9:00 Uhr" && webprog[i].zeitbis =="10:00 Uhr") {
+    if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "9:00 Uhr" && webprog[i].zeitbis =="10:00 Uhr") {
 
       if (webprog[i].prio == "keine Priorität") {
         // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3577,10 +3577,10 @@ for (i in webprog){
   }
 
 
-// freitag, 10 bis 11
+// Freitag, 10 bis 11
 
 for (i in webprog) {
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "10:00 Uhr" && webprog[i].zeitbis =="11:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "10:00 Uhr" && webprog[i].zeitbis =="11:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3619,10 +3619,10 @@ for (i in webprog) {
   }
 }
 
-// freitag, 11 bis 12
+// Freitag, 11 bis 12
 
 for (i in webprog) {
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "11:00 Uhr" && webprog[i].zeitbis =="12:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "11:00 Uhr" && webprog[i].zeitbis =="12:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3661,10 +3661,10 @@ for (i in webprog) {
   }
 }
 
-// freitag, 12 bis 13
+// Freitag, 12 bis 13
 
 for (i in webprog) {
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "12:00 Uhr" && webprog[i].zeitbis =="13:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "12:00 Uhr" && webprog[i].zeitbis =="13:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3703,10 +3703,10 @@ for (i in webprog) {
   }
 }
 
-// freitag, 13 bis 14
+// Freitag, 13 bis 14
 
 for (i in webprog) {
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "13:00 Uhr" && webprog[i].zeitbis =="14:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "13:00 Uhr" && webprog[i].zeitbis =="14:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3745,10 +3745,10 @@ for (i in webprog) {
   }
 }
 
-// freitag, 14 bis 15
+// Freitag, 14 bis 15
 
 for (i in webprog) {
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "14:00 Uhr" && webprog[i].zeitbis =="15:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "14:00 Uhr" && webprog[i].zeitbis =="15:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3787,10 +3787,10 @@ for (i in webprog) {
   }
 }
 
-// freitag, 15 bis 16
+// Freitag, 15 bis 16
 
 for (i in webprog) {
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "15:00 Uhr" && webprog[i].zeitbis =="16:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "15:00 Uhr" && webprog[i].zeitbis =="16:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3830,10 +3830,10 @@ for (i in webprog) {
 }
 
 
-// freitag, 16-17
+// Freitag, 16-17
 
 for (i in webprog) {
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "16:00 Uhr" && webprog[i].zeitbis =="17:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "16:00 Uhr" && webprog[i].zeitbis =="17:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3872,10 +3872,10 @@ for (i in webprog) {
   }
 }
 
-// freitag, 17 bis 18
+// Freitag, 17 bis 18
 
 for (i in webprog) {
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "17:00 Uhr" && webprog[i].zeitbis =="18:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "17:00 Uhr" && webprog[i].zeitbis =="18:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3914,10 +3914,10 @@ for (i in webprog) {
   }
 }
 
-// freitag, 18 bis 19
+// Freitag, 18 bis 19
 
 for (i in webprog) {
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "18:00 Uhr" && webprog[i].zeitbis =="19:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "18:00 Uhr" && webprog[i].zeitbis =="19:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3956,10 +3956,10 @@ for (i in webprog) {
   }
 }
 
-// freitag, 19 bis 20
+// Freitag, 19 bis 20
 
 for (i in webprog) {
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "19:00 Uhr" && webprog[i].zeitbis =="20:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "19:00 Uhr" && webprog[i].zeitbis =="20:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -3998,10 +3998,10 @@ for (i in webprog) {
   }
 }
 
-// freitag, 20 bis 21
+// Freitag, 20 bis 21
 
 for (i in webprog) {
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "20:00 Uhr" && webprog[i].zeitbis =="22:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "20:00 Uhr" && webprog[i].zeitbis =="22:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4040,10 +4040,10 @@ for (i in webprog) {
   }
 }
 
-// freitag, 21 bis 22
+// Freitag, 21 bis 22
 
 for (i in webprog) {
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "21:00 Uhr" && webprog[i].zeitbis =="22:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "21:00 Uhr" && webprog[i].zeitbis =="22:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4080,10 +4080,10 @@ for (i in webprog) {
   }
 }
 
-// freitag, 22 bis 23
+// Freitag, 22 bis 23
 
 for (i in webprog) {
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "22:00 Uhr" && webprog[i].zeitbis =="23:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "22:00 Uhr" && webprog[i].zeitbis =="23:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4122,10 +4122,10 @@ for (i in webprog) {
   }
 }
 
-// freitag, 23 bis 24
+// Freitag, 23 bis 24
 
 for (i in webprog) {
-  if (webprog[i].tag == "freitag" && webprog[i].zeitvon == "23:00 Uhr" && webprog[i].zeitbis =="24:00 Uhr") {
+  if (webprog[i].tag == "Freitag" && webprog[i].zeitvon == "23:00 Uhr" && webprog[i].zeitbis =="24:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4168,7 +4168,7 @@ for (i in webprog) {
 //Samstag
 for (i in webprog){
 
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "6:00 Uhr" && webprog[i].zeitbis =="7:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "6:00 Uhr" && webprog[i].zeitbis =="7:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4209,11 +4209,11 @@ for (i in webprog){
 }
 
 
-// samstag, 7 bis 8
+// Samstag, 7 bis 8
 
 for (i in webprog){
 
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "7:00 Uhr" && webprog[i].zeitbis =="8:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "7:00 Uhr" && webprog[i].zeitbis =="8:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4253,11 +4253,11 @@ for (i in webprog){
 
 }
 
-// samstag, 8 bis 9
+// Samstag, 8 bis 9
 
   for (i in webprog){
 
-    if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "8:00 Uhr" && webprog[i].zeitbis =="9:00 Uhr") {
+    if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "8:00 Uhr" && webprog[i].zeitbis =="9:00 Uhr") {
 
       if (webprog[i].prio == "keine Priorität") {
         // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4297,9 +4297,9 @@ for (i in webprog){
 
   }
 
-// samstag, 9 bis 10
+// Samstag, 9 bis 10
   for (i in webprog) {
-    if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "9:00 Uhr" && webprog[i].zeitbis =="10:00 Uhr") {
+    if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "9:00 Uhr" && webprog[i].zeitbis =="10:00 Uhr") {
 
       if (webprog[i].prio == "keine Priorität") {
         // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4339,10 +4339,10 @@ for (i in webprog){
   }
 
 
-// samstag, 10 bis 11
+// Samstag, 10 bis 11
 
 for (i in webprog) {
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "10:00 Uhr" && webprog[i].zeitbis =="11:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "10:00 Uhr" && webprog[i].zeitbis =="11:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4381,10 +4381,10 @@ for (i in webprog) {
   }
 }
 
-// samstag, 11 bis 12
+// Samstag, 11 bis 12
 
 for (i in webprog) {
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "11:00 Uhr" && webprog[i].zeitbis =="12:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "11:00 Uhr" && webprog[i].zeitbis =="12:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4423,10 +4423,10 @@ for (i in webprog) {
   }
 }
 
-// samstag, 12 bis 13
+// Samstag, 12 bis 13
 
 for (i in webprog) {
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "12:00 Uhr" && webprog[i].zeitbis =="13:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "12:00 Uhr" && webprog[i].zeitbis =="13:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4465,10 +4465,10 @@ for (i in webprog) {
   }
 }
 
-// samstag, 13 bis 14
+// Samstag, 13 bis 14
 
 for (i in webprog) {
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "13:00 Uhr" && webprog[i].zeitbis =="14:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "13:00 Uhr" && webprog[i].zeitbis =="14:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4507,10 +4507,10 @@ for (i in webprog) {
   }
 }
 
-// samstag, 14 bis 15
+// Samstag, 14 bis 15
 
 for (i in webprog) {
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "14:00 Uhr" && webprog[i].zeitbis =="15:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "14:00 Uhr" && webprog[i].zeitbis =="15:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4549,10 +4549,10 @@ for (i in webprog) {
   }
 }
 
-// samstag, 15 bis 16
+// Samstag, 15 bis 16
 
 for (i in webprog) {
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "15:00 Uhr" && webprog[i].zeitbis =="16:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "15:00 Uhr" && webprog[i].zeitbis =="16:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4592,10 +4592,10 @@ for (i in webprog) {
 }
 
 
-// samstag, 16-17
+// Samstag, 16-17
 
 for (i in webprog) {
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "16:00 Uhr" && webprog[i].zeitbis =="17:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "16:00 Uhr" && webprog[i].zeitbis =="17:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4634,10 +4634,10 @@ for (i in webprog) {
   }
 }
 
-// samstag, 17 bis 18
+// Samstag, 17 bis 18
 
 for (i in webprog) {
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "17:00 Uhr" && webprog[i].zeitbis =="18:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "17:00 Uhr" && webprog[i].zeitbis =="18:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4676,10 +4676,10 @@ for (i in webprog) {
   }
 }
 
-// samstag, 18 bis 19
+// Samstag, 18 bis 19
 
 for (i in webprog) {
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "18:00 Uhr" && webprog[i].zeitbis =="19:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "18:00 Uhr" && webprog[i].zeitbis =="19:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4718,10 +4718,10 @@ for (i in webprog) {
   }
 }
 
-// samstag, 19 bis 20
+// Samstag, 19 bis 20
 
 for (i in webprog) {
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "19:00 Uhr" && webprog[i].zeitbis =="20:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "19:00 Uhr" && webprog[i].zeitbis =="20:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4760,10 +4760,10 @@ for (i in webprog) {
   }
 }
 
-// samstag, 20 bis 21
+// Samstag, 20 bis 21
 
 for (i in webprog) {
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "20:00 Uhr" && webprog[i].zeitbis =="22:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "20:00 Uhr" && webprog[i].zeitbis =="22:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4802,10 +4802,10 @@ for (i in webprog) {
   }
 }
 
-// samstag, 21 bis 22
+// Samstag, 21 bis 22
 
 for (i in webprog) {
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "21:00 Uhr" && webprog[i].zeitbis =="22:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "21:00 Uhr" && webprog[i].zeitbis =="22:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4842,10 +4842,10 @@ for (i in webprog) {
   }
 }
 
-// samstag, 22 bis 23
+// Samstag, 22 bis 23
 
 for (i in webprog) {
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "22:00 Uhr" && webprog[i].zeitbis =="23:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "22:00 Uhr" && webprog[i].zeitbis =="23:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
@@ -4884,10 +4884,10 @@ for (i in webprog) {
   }
 }
 
-// samstag, 23 bis 24
+// Samstag, 23 bis 24
 
 for (i in webprog) {
-  if (webprog[i].tag == "samstag" && webprog[i].zeitvon == "23:00 Uhr" && webprog[i].zeitbis =="24:00 Uhr") {
+  if (webprog[i].tag == "Samstag" && webprog[i].zeitvon == "23:00 Uhr" && webprog[i].zeitbis =="24:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
