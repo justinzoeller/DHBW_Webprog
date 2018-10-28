@@ -6,6 +6,7 @@
   <title> MyPlaner - dein digitaler Wochenplaner </title>
   <link rel="stylesheet" href="startseite.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script type="text/javascript" src="suchen.js"></script>
 
   <!-- Importierte Schriftarten von Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
@@ -15,6 +16,19 @@
   <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDGizZs0Ym1BDsU-vC2yXg6fWLz70dy_F8",
+      authDomain: "webprog-e7760.firebaseapp.com",
+      databaseURL: "https://webprog-e7760.firebaseio.com",
+      projectId: "webprog-e7760",
+      storageBucket: "webprog-e7760.appspot.com",
+      messagingSenderId: "289724997002"
+    };
+    firebase.initializeApp(config);
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
@@ -59,9 +73,10 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" onkeyup="searchFunction()" placeholder="Suchen" aria-label="Search">
-        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Suchen</button>
+        <input class="form-control mr-sm-2" type="search" placeholder="Suchen" id="search" aria-label="Search">
+        <button class="btn btn-outline-secondary my-2 my-sm-0"  onclick="searchFunction ()" type="submit">Suchen</button>
       </form>
+    
     </div>
   </nav>
   <header>

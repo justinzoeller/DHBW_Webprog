@@ -65,7 +65,7 @@ main{
 }
 .Information3{
   height:60%;
-  padding-top:200px;
+  padding-top:150px;
   padding-right:100px;
   padding-left:100px;
 
@@ -283,7 +283,6 @@ font-family: "Hind", cursive;
 font-weight:bold;
 text-align: center;
 }
-<<<<<<< HEAD
 
 /* Bootstrap Modal Images Stylesheet */
 /* Style the Image Used to Trigger the Modal */
@@ -367,5 +366,4 @@ text-align: center;
 }
 
 
-=======
->>>>>>> 423f6472d5ffd38ec5b04d4819d48034e2c8ab4e
+
