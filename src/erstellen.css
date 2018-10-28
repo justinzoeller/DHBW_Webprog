@@ -1,0 +1,21 @@
+.html {
+
+}
+
+.body {
+  background-color: white;
+  background-image: url(ozean.jpg);
+  backgorund-size: 100% 100%;
+
+}
+
+
+.label {
+  font-family: "Cookie", cursive;
+  font-size: 6vw;
+}
+
+#zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
+  font-family: "Roboto";
+  font-size: 2vw;
+}
