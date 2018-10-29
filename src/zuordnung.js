@@ -13,6 +13,7 @@ function createDeleteButton() {
 let key = null;
 
 
+deleteOnFireBaseKey('Mathe lernen');
 
 
 
@@ -33,12 +34,30 @@ function deleteOnFireBaseKey(name) {
   });
 }
 
+//schlachtet die space und ! und x ab
+function slaughter(str){
+ console.log(str);
+  str = str.slice(0, -1);
+  console.log(str);
+  str = str.replace('!','');
+  str = str.replace('!','');
+  str = str.replace('!','');
+  console.log(str);
+  str = str.replace(/\s*$/,'');
+  console.log(str);
+  return str;
+}
+
 
 //Delete function
 function deleteList(event) {
+  console.log('moin');
   let li = event.target;
-  deleteOnFireBaseKey('' + li.parentNode.id);
+  let str = li.parentNode.textContent;
+  str = slaughter(str);
+  deleteOnFireBaseKey('' + str);
   //key von dieses li in Firebase finden
+
 
 
 
@@ -769,22 +788,11 @@ rootRef.once("value").then(function(snapshot) {
           mo6.appendChild(mo6l4); // Listenelement dem Feld anhängen
           let btn = createDeleteButton();
           mo6l4.appendChild(btn);
-        }
 
 
       }
-
-      if (webprog[i].prio == "wenig Priorität") {
-        // Wenn wenig Priorität, nur ein Ausrufezeichen
-        var mo7l2 = document.createElement("li");
-        var mo7p2 = document.createTextNode(webprog[i].name + " " + "!");
-        mo7l2.appendChild(mo7p2);
-        mo7.appendChild(mo7l2);
-        let btn = createDeleteButton();
-        mo7l2.appendChild(btn);
-
-      }
-
+    }
+}
       // Montag, 12 bis 13
 
       for (i in webprog) {
@@ -1382,12 +1390,6 @@ rootRef.once("value").then(function(snapshot) {
           }
           //bis hier button delete
 
-        }
-      }
-
-
-    }
-
 
 
   }
@@ -1818,7 +1820,7 @@ for (i in webprog) {
       var di9l2 = document.createElement("li");
       var di9p2 = document.createTextNode(webprog[i].name + " " + "!");
       di9l2.appendChild(di9p2);
-      di9.appendChild(di9l2);#
+      di9.appendChild(di9l2);
       let btn = createDeleteButton();
       di9l2.appendChild(btn);
     }
