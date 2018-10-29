@@ -50,13 +50,23 @@ table, th, td {
   background-color: rgb(250, 240, 230);
 }
 
+#datum {
+  text-align: center;
+  color: white;
+  font-family: "Sacramento", cursive;
+  font-size: 2vw !important;
+
+
+}
+
+
 #ueberschriftstart, .hauptüberschrift {
   text-align: center;
   font-family: "Cookie", cursive;
   font-size: 8vw;
 }
 
-.üb {
+.üb, #datum {
   color: white;
   .padding-top: 0px !important;
 }
@@ -65,16 +75,14 @@ table, th, td {
   text-align: center;
   color: white;
   font-family: "Sacramento", cursive;
-<<<<<<< HEAD
   font-size: 4vw;
-=======
-    font-size: 4vw;
+
 }
 .adr{
   	vertical-align: right;
   	text-align:right;
     color:black;
->>>>>>> 88a5ed2f3e353a42ddbaecbeb3e91859e53182e3
+
 }
 
 .adr {
@@ -82,22 +90,20 @@ table, th, td {
 <<<<<<< HEAD
   text-align: right;
   color: white;
-=======
   text-align:right;
   color:black;
->>>>>>> 88a5ed2f3e353a42ddbaecbeb3e91859e53182e3
+
 }
 
 .plz {
   vertical-align: right;
-<<<<<<< HEAD
   text-align: right;
   color: white;
 }
-=======
+
   text-align:right;
   color:black;
->>>>>>> 88a5ed2f3e353a42ddbaecbeb3e91859e53182e3
+
 
 .land {
   vertical-align: right;
@@ -150,6 +156,11 @@ table, th, td {
   text-align: center;
 }
 
+#logo{
+  width:55px;
+  height:55px;;
+}
+
 .infoueberschrift {
   font-family: "Cookie", cursive;
   font-size: 10vw;
@@ -170,7 +181,6 @@ table, th, td {
   font-size: 2vw;
   margin-top: 4vw;
 }
-<<<<<<< HEAD
 
 .info1 {
   font-size: 1vw;
