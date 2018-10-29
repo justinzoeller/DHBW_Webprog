@@ -3760,8 +3760,8 @@ for (i in webprog) {
 
     if (webprog[i].prio == "wenig Priorität") {
       // Wenn wenig Priorität, nur ein Ausrufezeichen
-      var fr4l2 = document.createElement("li");
-      var fr4p2 = document.createTextNode(webprog[i].name + " " + "!" );
+      var fr9l2 = document.createElement("li");
+      var fr9p2 = document.createTextNode(webprog[i].name + " " + "!" );
       fr9l2.appendChild(fr9p2);
       fr9.appendChild(fr9l2);
     }

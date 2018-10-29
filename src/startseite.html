@@ -6,6 +6,7 @@
   <title> MyPlaner - dein digitaler Wochenplaner </title>
   <link rel="stylesheet" href="startseite.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script type="text/javascript" src="suchen.js"></script>
 
   <!-- Importierte Schriftarten von Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
@@ -15,22 +16,37 @@
   <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDGizZs0Ym1BDsU-vC2yXg6fWLz70dy_F8",
+      authDomain: "webprog-e7760.firebaseapp.com",
+      databaseURL: "https://webprog-e7760.firebaseio.com",
+      projectId: "webprog-e7760",
+      storageBucket: "webprog-e7760.appspot.com",
+      messagingSenderId: "289724997002"
+    };
+    firebase.initializeApp(config);
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  
+
 </head>
 
 
 <body>
   <!-- Integration einer Navigationsbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="startseite.html">
-  <img id="logo" src = "Logo_MyPlaner.png"alt=""/>         MyPlaner</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <img id="logo" src="Logo_MyPlaner.png" alt="" /> MyPlaner</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
@@ -38,10 +54,10 @@
           <a class="nav-link" href="index.html">Deine Woche <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="erstellen.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-          Erstellen
-        </a>
+          <a class="nav-link dropdown-toggle" href="erstellen.html" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Erstellen
+          </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="erstellen.html">Aktivität erstellen</a>
             <a class="dropdown-item" href="#">Notiz erstellen</a>
@@ -57,9 +73,10 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Suchen" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suchen</button>
+        <input class="form-control mr-sm-2" type="search" placeholder="Suchen" id="search" aria-label="Search">
+        <button class="btn btn-outline-secondary my-2 my-sm-0"  onclick="searchFunction ()" type="submit">Suchen</button>
       </form>
+    
     </div>
   </nav>
   <header>
@@ -67,12 +84,12 @@
       <div>
 </body>
 <h1 class="infoueberschrift"> MyPlaner</h1>
-<br/>
+<br />
 <p>Erstelle mit Hilfe von MyPlaner deinen ganz persönlichen Wochenplan.</p>
 </div>
 <div class="button" style="text-align: center; padding-right: 7%">
   <button class="btn btn-primary2" id="erstellen" onclick="einordnen">
-           <a class="infolink" href="erstellen.html"> Los geht's!</a>
+    <a class="infolink" href="erstellen.html"> Los geht's!</a>
   </button>
 </div>
 
@@ -86,7 +103,8 @@
         <div class="abschnitt2">
           <h6 class="infohaupt"> Ein Ort für all die Dinge, die du erledigen musst.</h6>
           <text class="text">
-            Zeitmanagement ist das A und O für eine erfolgreiche Woche und ein erfolgreiches Leben. Wir wollen dich genau dabei unterstützen!
+            Zeitmanagement ist das A und O für eine erfolgreiche Woche und ein erfolgreiches Leben. Wir wollen dich
+            genau dabei unterstützen!
             Das heißt: mehr Produktivität, Motivation, Leistung, Disziplin und Ordnung im Alltag!
           </text>
         </div>
@@ -102,31 +120,33 @@
     <div class="row">
       <div class="col-md-12">
         <div class="skills">
-          <h1> Mit MyPlaner kannst du...<br/></h1>
+          <h1> Mit MyPlaner kannst du...<br /></h1>
         </div>
       </div>
       <div class="col-md-6">
         <div class="activity">
-          <img src="activity.png" alt="activity" width="30px" height="30px" /><br/>
-          <h4 style="font-weight:bold;">Aktivitäten erstellen</h4> <br/>
-          <p>MyPlaner bietet dir die Möglichkeit deine Aktivitäten selbst zu benennen <br/> 
-              und Individuell zu gestalten!</p>
+          <img src="activity.png" alt="activity" width="30px" height="30px" /><br />
+          <h4 style="font-weight:bold;">Aktivitäten erstellen</h4> <br />
+          <p>MyPlaner bietet dir die Möglichkeit deine Aktivitäten selbst zu benennen <br />
+            und Individuell zu gestalten!</p>
         </div>
       </div>
       <div class="col-md-6">
         <div class="priority">
-          <img src="priority.png" alt="priority" width="30px" height="30px" /><br/>
-          <h4 style="font-weight:bold;">Aktivitäten priorisieren</h4> <br/>
-          <p>Deine erstellten Aktivitäten kannst du außerdem priorisieren. <br/> Durch deine individuelle Priorisierung kannst
-            du auch an Tagen, <br/> an denen du viel zutun hast, abwägen, welche Aufgaben am Wichtigsten sind.
+          <img src="priority.png" alt="priority" width="30px" height="30px" /><br />
+          <h4 style="font-weight:bold;">Aktivitäten priorisieren</h4> <br />
+          <p>Deine erstellten Aktivitäten kannst du außerdem priorisieren. <br /> Durch deine individuelle
+            Priorisierung kannst
+            du auch an Tagen, <br /> an denen du viel zutun hast, abwägen, welche Aufgaben am Wichtigsten sind.
           </p>
         </div>
       </div>
       <div class="col-md-12">
         <div class="time">
-          <img src="time.png" alt="time" width="30px" height="30px" /><br/>
-          <h4 style="font-weight:bold;">Zeitaufwände planen</h4> <br/>
-          <p>Um deinen Tag besser strukturieren zu können, bieten wir dir die Möglichkeit <br/> für deine Aktivitäten Zeitaufwände
+          <img src="time.png" alt="time" width="30px" height="30px" /><br />
+          <h4 style="font-weight:bold;">Zeitaufwände planen</h4> <br />
+          <p>Um deinen Tag besser strukturieren zu können, bieten wir dir die Möglichkeit <br /> für deine Aktivitäten
+            Zeitaufwände
             stündlich zu Planen.
           </p>
         </div>
@@ -137,9 +157,16 @@
     <div class="row">
       <div class="col-md-6">
         <div class="Wochenplan">
-          <p>Screenshot von Deine Woche hier</p>
+          <img id="myImg" src="screenshot.png" alt="Beispiel deiner Woche" width="400vh" height="auto"/>
+          <!-- Bootstrap Modal Images -->
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
+          <!-- Modal Images  -->
         </div>
-
+        <script src="img.js"></script>
       </div>
       <div class="col-md-6">
         <div class="Beispiel">
@@ -152,15 +179,16 @@
   </div>
   <div class="Information4" id="ebene4" style="min-height:20vh;">
     <h3 class="infohaupt"> Du bist bereit? Dann erstelle jetzt deine erste Aktivität!</h3>
-    <p>MyPlaner kann schnell und einfach von jedem genutzt werden und unterstützt dich dennoch bei deinem wöchentlichen Selbstmanagement.</p>
+    <p>MyPlaner kann schnell und einfach von jedem genutzt werden und unterstützt dich dennoch bei deinem wöchentlichen
+      Selbstmanagement.</p>
   </div>
   <div class="Information" id="ebene4" style="min-height:40vh;">
     <div class="row">
       <div class="col-md-12">
         <div class="button" style="text-align: center; padding-right: 7%">
           <button class="btn btn-primary2" id="erstellen" onclick="einordnen">
-         <a class="infolink" href="erstellen.html"> Los geht's!</a>
-        </button>
+            <a class="infolink" href="erstellen.html"> Los geht's!</a>
+          </button>
         </div>
       </div>
     </div>
@@ -170,4 +198,5 @@
 <footer id="ebene5" style="min-height:10vh;">
 </footer>
 </body>
+
 </html>
