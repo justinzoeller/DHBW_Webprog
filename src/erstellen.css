@@ -1,11 +1,10 @@
-.html {
 
-}
-
-.html {
+.body {
   background-color: white;
   background-image: url(test2.jpg.jpg);
-
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 100%;
 
 }
 
@@ -13,17 +12,18 @@
   font-family: "Cookie";
   text-align: center;
   color: white;
+  font-size: 5rem;
 }
 
 
 .label {
   font-family: "Cookie", cursive;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
   font-family: "Roboto";
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 #priobild {
@@ -49,8 +49,10 @@
   font-family: "Cookie", cursive;
   font-size: 25px;
   align-content: center;
+  background-color: white !important;
 
 }
+
 
 #formularganz {
   background-color: white;
