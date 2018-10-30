@@ -25,6 +25,7 @@ header{
 ;
 
 }
+
 .header{
   padding-top:150px;
   font-family: "Cookie", cursive;
@@ -33,7 +34,7 @@ header{
 }
 .header p{
   color:black;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
 
 }
 
@@ -43,6 +44,7 @@ main{
   margin-right:20px;
 
 }
+
 #logo{
   width:55px;
   height:55px;;
@@ -90,7 +92,7 @@ main{
 
 }
 .skills>h1{
-  font-size:4.3vw;
+  font-size:4rem;
   text-align: center;
 
 }
@@ -126,7 +128,7 @@ td{
 #ueberschriftstart, .hauptüberschrift{
   text-align: center;
   font-family: "Cookie", cursive;
-  font-size: 8vw;
+  font-size: 8rem;
 }
 nav{
   position:fixed !important;
@@ -155,7 +157,7 @@ nav{
 
 .label {
   font-family: "Cookie", cursive;
-  font-size: 4vw;
+  font-size: 3rem;
 }
 
 .einreichen {
@@ -171,26 +173,26 @@ nav{
 }
 .infohaupt {
   font-family: "Cookie", cursive;
-  font-size: 4vw;
+  font-size: 3.5rem;
   text-align: center;
   color: white;
 }
 .text {
   font-family: "Hind", cursive;
-  font-size: 1.5vw;
+  font-size: 1.2rem;
   text-align: center !important;
 }
 
 .infoueberschrift {
   font-family: "Cookie", cursive;
-  font-size: 10vw;
+  font-size: 10rem;
   text-align: center;
   color: white;
 }
 
 .infolink{
   font-family: "Cookie", cursive;
-  font-size: 2.5vw !important;
+  font-size: 2.5rem !important;
   text-align: center;
   color: black;
   text-decoration: none;
@@ -200,7 +202,7 @@ nav{
 
 .infolink:hover{
   font-family: "Cookie", cursive;
-  font-size: 2.5vw !important;
+  font-size: 2.5rem !important;
   text-align: center;
   color: black;
   text-decoration: none;
@@ -252,19 +254,19 @@ nav{
   text-align: center;
   position:absolute;
   font-family: "helvetica neue";
-  font-size:1vm;
+  font-size:1rem;
 }
 .button{
 
   padding-bottom: 10px;
   padding-top:10px;
   font-family: "helvetica neue";
-  font-size:1vm;
+  font-size:1rem;
 
 }
 #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
   font-family: "Neucha", cursive;
-  font-size: 2.5vw;
+  font-size: 2.5rem;
 }
 .textblock-content{
   text-align: left;
@@ -279,7 +281,7 @@ nav{
 
 }
 .activity, .time,.priority{
-font-size:1vm;
+font-size:1rem;
 font-family: "Hind", cursive;
 font-weight:bold;
 text-align: center;
