@@ -113,18 +113,6 @@ main{
 }
 
 
-/* Anpassungen für die Tabelle
-  bzw. den Wocehenplaner */
-
-table, th, td {
-  border: 1px solid black;
-  padding: 15px;
-
-}
-td{
-  width:20px;
-}
-
 #ueberschriftstart, .hauptüberschrift{
   text-align: center;
   font-family: "Cookie", cursive;
