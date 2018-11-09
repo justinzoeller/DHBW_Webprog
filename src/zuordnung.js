@@ -489,12 +489,12 @@ rootRef.once("value").then(function(snapshot) {
 
     for (i in webprog) {
 
-      if (webprog[i].tag == "Montag" && webprog[i].zeitvon == "6:00 Uhr" && webprog[i].zeitbis == "7:00 Uhr") {
+      if (webprog[i].tag == "Montag" && webprog[i].zeitvon == "6:00 Uhr") {
 
         if (webprog[i].prio == "keine Priorität") {
           // Wenn keine Priorität, keine zusätzliche Zeichen
           var mo1l1 = document.createElement("li");
-          var mo1p1 = document.createTextNode(webprog[i].name);
+          var mo1p1 = document.createTextNode(webprog[i].name + " " +"[bis" +" " + webprog[i].zeitbis+"]");
           mo1l1.appendChild(mo1p1);
           mo1.appendChild(mo1l1);
           let btn = createDeleteButton();
@@ -504,7 +504,7 @@ rootRef.once("value").then(function(snapshot) {
         if (webprog[i].prio == "wenig Priorität") {
           // Wenn wenig Priorität, nur ein Ausrufezeichen
           var mo1l2 = document.createElement("li");
-          var mo1p2 = document.createTextNode(webprog[i].name + " " + "!");
+          var mo1p2 = document.createTextNode(webprog[i].name + " " + "!"+ " " +"[bis" + " " + webprog[i].zeitbis+"]");
           mo1l2.appendChild(mo1p2);
           mo1.appendChild(mo1l2);
           let btn = createDeleteButton();
@@ -514,7 +514,7 @@ rootRef.once("value").then(function(snapshot) {
         if (webprog[i].prio == "mittlere Priorität") {
           // Wenn mittlere Priorität, dann zwei Ausrufezeichen
           var mo1l3 = document.createElement("li");
-          var mo1p3 = document.createTextNode(webprog[i].name + " " + "!!");
+          var mo1p3 = document.createTextNode(webprog[i].name + " " + "!!"+ " " +"[bis" +" " + webprog[i].zeitbis+"]");
           mo1l3.appendChild(mo1p3);
           mo1.appendChild(mo1l3);
           let btn = createDeleteButton();
@@ -526,12 +526,13 @@ rootRef.once("value").then(function(snapshot) {
         if (webprog[i].prio == "hohe Priorität") {
           // Wenn hohe Priorität, dann drei Ausrufezeichen
           var mo1l4 = document.createElement("li"); // Listenelement anlegen
-          var mo1p4 = document.createTextNode(webprog[i].name + " " + "!!!");
+          var mo1p4 = document.createTextNode(webprog[i].name + " " + "!!!"+ " " +"[bis" +" " + webprog[i].zeitbis+"]");
           mo1l4.appendChild(mo1p4); // dem Listenelement Text anhängen
           mo1.appendChild(mo1l4); // Listenelement dem Feld anhängen
           let btn = createDeleteButton();
           mo1l4.appendChild(btn);
         }
+
 
       }
 
@@ -542,7 +543,7 @@ rootRef.once("value").then(function(snapshot) {
 
     for (i in webprog) {
 
-      if (webprog[i].tag == "Montag" && webprog[i].zeitvon == "7:00 Uhr" && webprog[i].zeitbis == "8:00 Uhr") {
+      if (webprog[i].tag == "Montag" && webprog[i].zeitvon == "7:00 Uhr") {
 
         if (webprog[i].prio == "keine Priorität") {
           // Wenn keine Priorität, keine zusätzliche Zeichen
