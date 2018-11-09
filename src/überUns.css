@@ -1,40 +1,30 @@
 /* Hierbei handelt es sich um die CSS-Datei für die Startseite und das Impressum der Anwendung basierend auf Google Material Design */
-
-<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-
-html {
+<link rel="stylesheet"href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"crossorigin="anonymous"><script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"crossorigin="anonymous"></script>html {
   font-family: "helvetica neue"
 }
 
 body {
+  background-color: white;
+  background-image: url(test2.jpg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 100%;
 
-
-
-
-    background-color: white;
-    background-image: url(test2.jpg.jpg);
-    background-repeat:no-repeat;
-    background-size: 100% 100%;
-    margin-bottom: 100%;
-
-
-   /* Da eine Woche 7 Tage hat.*/
-.kalender {
-  display: grid;
-  grid-template-columns: 8ch auto;
-}
+  /* Da eine Woche 7 Tage hat.*/
+  .kalender {
+    display: grid;
+    grid-template-columns: 8ch auto;
+  }
 }
 
 /* Anpassungen für die Tabelle
   bzw. den Wochenplaner */
-
 table, th, td {
   border: 1px solid black;
   padding: 15px;
 }
 
-#ueberschriftstart, .hauptüberschrift{
+#ueberschriftstart, .hauptüberschrift {
   text-align: center;
   font-family: "Cookie", cursive;
   font-size: 8vw;
@@ -52,7 +42,7 @@ table, th, td {
   font-family: "Neucha", cursive;
 }
 
-#uhrzeit{
+#uhrzeit {
   font-family: "Sacramento", cursive;
   font-weight: bold;
 }
@@ -65,8 +55,7 @@ table, th, td {
 .einreichen {
   border: 1px solid blue;
   font-family: "Cookie", cursive;
-  color: white
-  background-color: blue;
+  color: white background-color: blue;
   text-align: center;
 }
 
@@ -76,6 +65,7 @@ table, th, td {
   text-align: center;
   color: white;
 }
+
 .text {
   font-family: "Handlee", cursive;
   font-size: 3vw;
@@ -89,67 +79,72 @@ table, th, td {
   color: white;
 }
 
-.infolink{
+.infolink {
   font-family: "Cookie", cursive;
   font-size: 8vw;
   text-align: center;
   color: black;
-
 }
 
-.btn-primary{
+.btn-primary {
   text-align: center;
   font-family: "Cookie", cursive;
   font-size: 2vw;
   margin-top: 4vw;
 }
 
-.überunsÜberschrift{
+.überunsÜberschrift {
   font-family: "Cookie", cursive;
   font-size: 10vw;
   text-align: center;
   color: white;
 }
-#logo{
-  width:200px;
-  height:150px;
+
+#logo {
+  width: 200px;
+  height: 150px;
 }
 
-.überunsÜberschrift2{
+.überunsÜberschrift2 {
   font-family: "Cookie", cursive;
   font-size: 6vw;
   color: black;
   text-align: center;
 }
-.überunsInfo{
+
+.überunsInfo {
   font-family: "Cookie", cursive;
   font-size: 4vw;
   color: black;
   text-align: center;
 }
-.überunsInfo2{
+
+.überunsInfo2 {
   font-family: "Cookie", cursive;
   font-size: 3vw;
   text-align: center;
   color: black;
   text-align: center;
 }
-.p1{
+
+.p1 {
   font-family: "Hind", cursive;
   font-size: 2vw;
   color: black;
 }
 
-.btn{
+.btn {
   font-family: "Hind", cursive;
   font-size: 2vw;
   color: indigo;
 }
-.bild{
+
+.bild {
   width: 60px;
   height: 50px;
 }
-.quote1{
+
+.quote1 {
   font-family: "Ruthie", cursive;
   font-size: 5vw;
   color: indigo;
@@ -157,24 +152,25 @@ table, th, td {
   border-width: 5px;
   border-style: dotted;
 }
-.überunsInfo3{
+
+.überunsInfo3 {
   font-family: "Cookie", cursive;
   font-size: 4vw;
   color: black;
   text-align: center;
 }
-#j1, #j3{
+
+#j1, #j3 {
   background-color: #E0FFFF;
 }
 
-#j2, #j4{
+#j2, #j4 {
   background-color: #FFFAF0;
 }
 
-#M,#F,#E {
+#M, #F, #E {
   text-decoration: underline;
 }
-
 
 #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp {
   font-family: "Neucha", cursive;
