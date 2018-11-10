@@ -45,10 +45,6 @@ main{
 
 }
 
-#logo{
-  width:55px;
-  height:55px;;
-}
 #zeit{
   padding-top:10px;
   width:400px;
@@ -118,30 +114,27 @@ main{
   font-family: "Cookie", cursive;
   font-size: 8rem;
 }
+/* Navbar */
 nav{
   position:fixed !important;
   width:100%;
   background-color:rgb(179, 179, 179);
 }
-/* Navbar */
-
 .navbar {
   font-family: "Roboto", sans-serif;
 }
-
 .navbar-brand {
-
   font-family: "Pacifico";
 }
+/* Navbar CSS zuende */
 
-#spalten {
-  font-family: "Neucha", cursive;
+/* Logo formatierung */
+#logo{
+  width:55px;
+  height:55px;;
 }
+/* Logo Ende */
 
-#uhrzeit{
-  font-family: "Sacramento", cursive;
-  font-weight: bold;
-}
 
 .label {
   font-family: "Cookie", cursive;
