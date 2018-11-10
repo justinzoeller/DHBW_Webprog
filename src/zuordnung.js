@@ -41,31 +41,32 @@ function slaughter(str){
   str = str.slice(0, -1);
   console.log(str);
   str = str.replace ("[bis", " ");
+str  = str.replace("10:00 Uhr"," ");
+ str = str.replace("11:00 Uhr"," ");
+ str = str.replace("12:00 Uhr"," ");
+ str = str.replace("13:00 Uhr"," ");
+ str = str.replace("14:00 Uhr"," ");
+ str = str.replace("15:00 Uhr"," ");
+ str = str.replace("16:00 Uhr"," ");3
+ str = str.replace("17:00 Uhr"," ");
+ str = str.replace("18:00 Uhr"," ");
+ str = str.replace("19:00 Uhr"," ");
+ str = str.replace("20:00 Uhr"," ");
+ str = str.replace("21:00 Uhr"," ");
+ str = str.replace("22:00 Uhr"," ");
+ str = str.replace("23:00 Uhr"," ");
+ str = str.replace("24:00 Uhr"," ");
+ // erst danach
   str = str.replace("6:00 Uhr", " ");
-  str = str.replace("7:00 Uhr", "");
-  str = str.replace("8:00 Uhr", "");
-  str = str.replace("9:00 Uhr","");
-  str = str.replace("10:00 Uhr","");
-  str = str.replace("11:00 Uhr","");
-  str = str.replace("12:00 Uhr","");
-  str = str.replace("13:00 Uhr","");
-  str = str.replace("14:00 Uhr","");
-  str = str.replace("15:00 Uhr","");
-  str = str.replace("16:00 Uhr","");
-  str = str.replace("17:00 Uhr","");
-  str = str.replace("18:00 Uhr","");
-  str = str.replace("19:00 Uhr","");
-  str = str.replace("20:00 Uhr","");
-  str = str.replace("21:00 Uhr","");
-  str = str.replace("22:00 Uhr","");
-  str = str.replace("23:00 Uhr","");
-  str = str.replace("24:00 Uhr","");
+  str = str.replace("7:00 Uhr", " ");
+  str = str.replace("8:00 Uhr", " ");
+  str = str.replace("9:00 Uhr"," ");
+  str
+  console.log(str);
   str = str.replace("]", " ")
-
-  str = str.replace('[','');
-  str = str.replace('!','');
-  str = str.replace('!','');
-  str = str.replace('!','');
+  str = str.replace("!","");
+  str = str.replace("!","");
+  str = str.replace("!","");
   console.log(str);
   str = str.replace(/\s*$/,'');
   console.log(str);
@@ -5954,7 +5955,7 @@ for (i in webprog) {
 
 for (i in webprog) {
 
-  if (webprog[i].tag == "Sonntag" && webprog[i].zeitvon == "6:00 Uhr" && webprog[i].zeitbis == "7:00 Uhr") {
+  if (webprog[i].tag == "Sonntag" && webprog[i].zeitvon == "6:00 Uhr") {
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
