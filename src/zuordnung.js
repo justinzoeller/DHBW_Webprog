@@ -37,8 +37,32 @@ function deleteOnFireBaseKey(name) {
 //schlachtet die space und ! und x ab
 function slaughter(str){
  console.log(str);
+
   str = str.slice(0, -1);
   console.log(str);
+  str = str.replace ("[bis", " ");
+  str = str.replace("6:00 Uhr", " ");
+  str = str.replace("7:00 Uhr", "");
+  str = str.replace("8:00 Uhr", "");
+  str = str.replace("9:00 Uhr","");
+  str = str.replace("10:00 Uhr","");
+  str = str.replace("11:00 Uhr","");
+  str = str.replace("12:00 Uhr","");
+  str = str.replace("13:00 Uhr","");
+  str = str.replace("14:00 Uhr","");
+  str = str.replace("15:00 Uhr","");
+  str = str.replace("16:00 Uhr","");
+  str = str.replace("17:00 Uhr","");
+  str = str.replace("18:00 Uhr","");
+  str = str.replace("19:00 Uhr","");
+  str = str.replace("20:00 Uhr","");
+  str = str.replace("21:00 Uhr","");
+  str = str.replace("22:00 Uhr","");
+  str = str.replace("23:00 Uhr","");
+  str = str.replace("24:00 Uhr","");
+  str = str.replace("]", " ")
+
+  str = str.replace('[','');
   str = str.replace('!','');
   str = str.replace('!','');
   str = str.replace('!','');
@@ -46,8 +70,8 @@ function slaughter(str){
   str = str.replace(/\s*$/,'');
   console.log(str);
   return str;
-}
 
+}
 
 //Delete function
 function deleteList(event) {
@@ -4013,7 +4037,7 @@ for (i in webprog) {
 // Donnerstag, 22 bis 23
 
 for (i in webprog) {
-  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "22:00 Uhr"+ " " +"[bis" +" " + webprog[i].zeitbis+"]");{
+  if (webprog[i].tag == "Donnerstag" && webprog[i].zeitvon == "22:00 Uhr"){
 
     if (webprog[i].prio == "keine Priorität") {
       // Wenn keine Priorität, keine zusätzliche Zeichen
