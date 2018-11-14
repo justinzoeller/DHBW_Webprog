@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <title> MyPlaner - dein digitaler Wochenplaner </title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="erstellen.css">
@@ -16,9 +17,9 @@
   <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
 
 
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
-<script>
-  // Initialize Firebase
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+  <script>
+    // Initialize Firebase
   var config = {
     apiKey: "AIzaSyDGizZs0Ym1BDsU-vC2yXg6fWLz70dy_F8",
     authDomain: "webprog-e7760.firebaseapp.com",
@@ -43,81 +44,80 @@
 <body>
   <!-- Integration einer Navigationsbar, diese muss hier ebenfalls wiederholt werden-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="startseite.html">
-     <img src = "Logo_MyPlaner.png" width="55px" height="55px" alt=""/>         MyPlaner</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <a class="navbar-brand" href="startseite.html">
+      <img src="Logo_MyPlaner.png" width="55px" height="55px" alt="" /> MyPlaner</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Deine Woche <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="erstellen.html">Erstellen</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Erstellen
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item"  href="erstellen.html">Aktivität erstellen</a>
-          <a class="dropdown-item" href="#">Notiz erstellen</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Deine Woche <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="erstellen.html">Erstellen</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Erstellen
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="erstellen.html">Aktivität erstellen</a>
+            <a class="dropdown-item" href="#">Notiz erstellen</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="überUns.html">Über uns <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Suchen" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suchen</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Das Eingabefeld einfügen. -->
+  <div id="formularganz">
+    <div class="container">
+      <p />
+      <p />
+      <h1 class="hauptüberschrift"> Neue Aktivität anlegen </h1>
+      <p> </p>
+      <p> </p>
+      <text id=info>Hier kannst du deine erste Aktivität anlegen. Erstelle so viele, du willst. Aber Achtung: Nachher könnte es sein, dass du tatsächlich besser planen kannst! Wir haben dich gewarnt.</text>
+      <p />
+
+      <form id="form">
+        <!-- Das Element für den Namen der Aktivität -->
+        <div class="form-group">
+          <label for="name" class="label">Name deiner Aktivität</label>
+          <input type="text" class="form-control" id="name" placeholder="Gib einen Namen für die Aktivität ein."></input>
+          <p> </p>
+          <small id="nameHelp" class="form-text text-muted">Nimm einen prägnanten Namen, sodass du sofort weißt, um was es sich handelt.</small>
         </div>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="überUns.html">Über uns <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Suchen" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suchen</button>
-    </form>
-  </div>
-</nav>
 
-<!-- Das Eingabefeld einfügen. -->
-<div id = "formularganz">
-<div class="container">
-  <p />
-  <p />
-  <h1 class="hauptüberschrift"> Neue Aktivität anlegen </h1>
-  <p> </p>
-  <p> </p>
-  <text id = info>Hier kannst du deine erste Aktivität anlegen. Erstelle so viele, du willst. Aber Achtung: Nachher könnte es sein, dass du tatsächlich besser planen kannst! Wir haben dich gewarnt.</text>
-  <p />
-
-  <form id="form">
-    <!-- Das Element für den Namen der Aktivität -->
-    <div class="form-group">
-      <label for="name" class ="label">Name deiner Aktivität</label>
-      <input type="text" class="form-control" id="name"
-      placeholder="Gib einen Namen für die Aktivität ein."></input>
-      <p> </p>
-      <small id="nameHelp" class="form-text text-muted">Nimm einen prägnanten Namen, sodass du sofort weißt, um was es sich handelt.</small>
-    </div>
-
-    <div class="form-group">
-      <label for="tag" class="label">Tag der Aktivität</label>
-      <select class="form-control" id="tag">
-        <option>Montag</option>
-        <option>Dienstag</option>
-        <option>Mittwoch</option>
-        <option>Donnerstag</option>
-        <option>Freitag</option>
-        <option>Samstag</option>
-        <option>Sonntag</option>
-      </select>
-      <p> </p>
-      <small id="tagHelp" class="form-text text-muted">Trage hier den Tag ein, an dem du die gewünschte Aktivität erledigen musst.</small>
-    </div>
-
+<<<<<<< HEAD
+        <div class="form-group">
+          <label for="tag" class="label">Tag der Aktivität</label>
+          <select class="form-control" id="tag">
+            <option>Montag</option>
+            <option>Dienstag</option>
+            <option>Mittwoch</option>
+            <option>Donnerstag</option>
+            <option>Freitag</option>
+            <option>Samstag</option>
+            <option>Sonntag</option>
+          </select>
+          <p> </p>
+          <small id="tagHelp" class="form-text text-muted">Trage hier den Tag ein, an dem du die gewünschte Aktivität erledigen musst.</small>
+=======
     <div class="form-group">
       <div class="form-group">
         <label for="zeitvon" class = "label">Anfangszeit der Aktivität</label>
@@ -172,7 +172,82 @@
           </select>
           <p> </p>
           <small id="zeitbisHelp" class="form-text text-muted">Trage hier die Endzeit deiner Aktivität ein. <br> <font color = "red"> Du sieht die Endzeit in Klammern nach deiner Aktivität.</font> </br> </small>
+>>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
         </div>
+
+        <div class="form-group">
+          <div class="form-group">
+            <label for="zeitvon" class="label">Anfangszeit der Aktivität</label>
+            <select class="form-control" id="zeitvon">
+              <!-- Anfangszeit der Aktivität. Zeitraum von 6-24 Uhr möglich -->
+              <option>6:00 Uhr</option>
+              <option>7:00 Uhr</option>
+              <option>8:00 Uhr</option>
+              <option>9:00 Uhr</option>
+              <option>10:00 Uhr</option>
+              <option>11:00 Uhr</option>
+              <option>12:00 Uhr</option>
+              <option>13:00 Uhr</option>
+              <option>14:00 Uhr</option>
+              <option>15:00 Uhr</option>
+              <option>16:00 Uhr</option>
+              <option>17:00 Uhr</option>
+              <option>18:00 Uhr</option>
+              <option>19:00 Uhr</option>
+              <option>20:00 Uhr</option>
+              <option>21:00 Uhr</option>
+              <option>22:00 Uhr</option>
+            </select>
+            <p> </p>
+            <small id="zeitvonHelp" class="form-text text-muted">Trage hier die Anfangszeit deiner Aktivität ein. <br>
+              <font color="red"> Achtung: Der Zeitraum einer Aktivität darf maximal eine Stunde betragen!</font> </br>
+            </small>
+          </div>
+          <div class="form-group">
+            <div class="form-group">
+              <label for="zeitbis" class="label">Endzeit der Aktivität</label>
+              <select class="form-control" id="zeitbis">
+                <!-- Anfangszeit der Aktivität. Zeitraum von 7-24 Uhr möglich -->
+                <option>7:00 Uhr</option>
+                <option>8:00 Uhr</option>
+                <option>9:00 Uhr</option>
+                <option>10:00 Uhr</option>
+                <option>11:00 Uhr</option>
+                <option>12:00 Uhr</option>
+                <option>13:00 Uhr</option>
+                <option>14:00 Uhr</option>
+                <option>15:00 Uhr</option>
+                <option>16:00 Uhr</option>
+                <option>17:00 Uhr</option>
+                <option>18:00 Uhr</option>
+                <option>19:00 Uhr</option>
+                <option>20:00 Uhr</option>
+                <option>21:00 Uhr</option>
+                <option>22:00 Uhr</option>
+              </select>
+              <p> </p>
+              <small id="zeitbisHelp" class="form-text text-muted">Trage hier die Endzeit deiner Aktivität ein. <br>
+                <font color="red"> Achtung: Der Zeitraum einer Aktivität darf maximal eine Stunde betragen!</font> </br>
+              </small>
+            </div>
+            <!-- Das Element für die Priorität der Aktivität -->
+            <div class="form-group">
+              <label for="prio" class="label">Priorität deiner Aktivität</label>
+              <select class="form-control" id="prio">
+                <option>keine Priorität</option> <!-- entspricht "0" -->
+                <option>wenig Priorität</option> <!-- entspricht "1" -->
+                <option>mittlere Priorität</option> <!-- entspricht "2" -->
+                <option>hohe Priorität </option> <!-- entspricht "3" -->
+              </select>
+              <p> </p>
+              <small id="prioHelp" class="form-text text-muted">Wähle eine Priorität aus. Abhängig von der Priorität wird deine Aktivität in "Deine Woche" anders dargestellt. Die Anzahl der Ausrufezeichen in "Deine Woche" spiegeln die Priorität
+                wieder.</small>
+            </div>
+            <button type="submit" value="submit" class="btn btn-primary" id="ein"> Nimm es in meine Liste auf.</button>
+          </div>
+        </div>
+<<<<<<< HEAD
+=======
     <!-- Das Element für die Priorität der Aktivität -->
 
     <div class="form-group">
@@ -189,5 +264,7 @@
     <button type="submit" value = "submit" class="btn btn-primary2" id="ein" > Nimm es in meine Liste auf.</button>
 </div>
 </div>
+>>>>>>> 6a32ff5ffce3c10ea29b42b71d434a2493b07325
 </body>
+
 </html>

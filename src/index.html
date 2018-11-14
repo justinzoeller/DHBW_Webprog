@@ -1,13 +1,13 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <!--  test-->
 
 <head>
 
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <title> MyPlaner - dein digitaler Wochenplaner </title>
-  <link rel="stylesheet" href="index.css"/>
-  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
   <script type="text/javascript" src="suchen.js"></script>
 
 
@@ -31,9 +31,9 @@
     };
     firebase.initializeApp(config);
   </script>
-<!-- attribute specifies the URL of an external script file-->
+  <!-- attribute specifies the URL of an external script file-->
 
-  <script src = "zuordnung.js"></script>
+  <script src="zuordnung.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -47,7 +47,7 @@
     moment().format();
   </script>
 
-<script src= "datum.js"></script>
+  <script src="datum.js"></script>
 
 
 
@@ -60,8 +60,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="startseite.html">
       <img id="logo" src="Logo_MyPlaner.png" alt="" /> MyPlaner</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -71,7 +70,7 @@
           <a class="nav-link" href="index.html">Deine Woche <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="erstellen.html" >
+          <a class="nav-link" href="erstellen.html">
             Erstellen
           </a>
         </li>
@@ -90,40 +89,40 @@
 
 
   <!-- Für Responsive Design: Tabelle in Container-->
-<!--padding innenabstand -->
+  <!--padding innenabstand -->
   <div class="container" style="padding-top:0% !important">
-<div class="row">
-    <div class ="col-md-2 bild">
-  <a title="Startseite" href="startseite.html">
- </a>
-  </div>
+    <div class="row">
+      <div class="col-md-2 bild">
+        <a title="Startseite" href="startseite.html">
+        </a>
+      </div>
 
-    <div class ="col-md-8 titelschrift">
-      <br />
-      <br />
-      <br />
-
-    <h1 class="üb" id = "ueberschriftstart"> Deine Woche </h1>
-    <h2 id ="datum"></h2>
-    <h2 class="zweiüb" id = "ueberschriftzwei">den perfekten Überblick haben</h2>
-    <br />
-      <br />
+      <div class="col-md-8 titelschrift">
         <br />
         <br />
         <br />
-    <text id="wochenangabevon"> </text>
-    <text id="wochenangabeheute"> </text>
-    <text id="wochenangabebis"> </text>
-  </div>
+
+        <h1 class="üb" id="ueberschriftstart"> Deine Woche </h1>
+        <h2 id="datum"></h2>
+        <h2 class="zweiüb" id="ueberschriftzwei">den perfekten Überblick haben</h2>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <text id="wochenangabevon"> </text>
+        <text id="wochenangabeheute"> </text>
+        <text id="wochenangabebis"> </text>
+      </div>
 
 
-    <div class ="col-md-2">
-    <div class="divprint">
-   <img class="printen" onclick="window.print()" src="print.jpg"/>
-  </div>
-    </div>
+      <div class="col-md-2">
+        <div class="divprint">
+          <img class="printen" onclick="window.print()" src="print.jpg" />
+        </div>
+      </div>
 
-<!--   <div class ="col-md-2">
+      <!--   <div class ="col-md-2">
     <div position ="absolute">
       <td class="selection" position=" absolute" right="0px"  >
     <a class="printen" onclick="window.print();" href="index.html" >
@@ -132,22 +131,23 @@
     </td>
     </div>
 </div> -->
-</div>
-    <div class ="table-responsive">
-      <table class = "table">
+    </div>
+    <div class="table-responsive">
+      <table class="table">
         <col width="100">
         <thead>
           <!-- Aufbauen der Spalten -->
-          <tr id="spalten"> <!--neue Tabellenzeile -->
+          <tr id="spalten">
+            <!--neue Tabellenzeile -->
             <col width="100">
             <th scope="col" colspan="1,5">Uhrzeit</th>
-            <th scope="col" width="100px" >Montag</th>
-            <th scope= "col" width="100px">Dienstag</th>
-            <th scope= "col" width="100px">Mittwoch</th>
-            <th scope= "col" width="100px">Donnerstag</th>
-            <th scope= "col" width="100px">Freitag</th>
-            <th scope= "col" width="100px">Samstag</th>
-            <th scope= "col" width="100px">Sonntag</th>
+            <th scope="col" width="100px">Montag</th>
+            <th scope="col" width="100px">Dienstag</th>
+            <th scope="col" width="100px">Mittwoch</th>
+            <th scope="col" width="100px">Donnerstag</th>
+            <th scope="col" width="100px">Freitag</th>
+            <th scope="col" width="100px">Samstag</th>
+            <th scope="col" width="100px">Sonntag</th>
           </tr>
 
 
@@ -159,244 +159,250 @@
           <tr>
             <!-- 06:00-07:00 Uhr-->
             <th scope="row" id="uhrzeit">06:00</th>
-            <th scope= "col"  id="mo6-7"></th>
-            <th scope= "col"  id="di6-7"></th>
-            <th scope= "col"  id="mi6-7"></th>
-            <th scope= "col"  id="do6-7"></th>
-            <th scope= "col"  id="fr6-7"></th>
-            <th scope= "col"  id="sa6-7"></th>
-            <th scope= "col"  id="so6-7"></th>
-            </tr>
+            <th scope="col" id="mo6-7"></th>
+            <th scope="col" id="di6-7"></th>
+            <th scope="col" id="mi6-7"></th>
+            <th scope="col" id="do6-7"></th>
+            <th scope="col" id="fr6-7"></th>
+            <th scope="col" id="sa6-7"></th>
+            <th scope="col" id="so6-7"></th>
+          </tr>
 
 
           <tr>
-              <!-- 07:00-08:00 Uhr-->
-              <th scope="row"  id="uhrzeit">07:00</th>
-              <th scope= "col"  id="mo7-8"></th>
-              <th scope= "col"  id="di7-8"></th>
-              <th scope= "col"  id="mi7-8"></th>
-              <th scope= "col"  id="do7-8"></th>
-              <th scope= "col"  id="fr7-8"></th>
-              <th scope= "col"  id="sa7-8"></th>
-              <th scope= "col"  id="so7-8"></th>
-            </tr>
+            <!-- 07:00-08:00 Uhr-->
+            <th scope="row" id="uhrzeit">07:00</th>
+            <th scope="col" id="mo7-8"></th>
+            <th scope="col" id="di7-8"></th>
+            <th scope="col" id="mi7-8"></th>
+            <th scope="col" id="do7-8"></th>
+            <th scope="col" id="fr7-8"></th>
+            <th scope="col" id="sa7-8"></th>
+            <th scope="col" id="so7-8"></th>
+          </tr>
 
 
           <tr>
             <!-- 08:00-09:00 Uhr-->
-            <th scope= "row"  id="uhrzeit">08:00</th>
-            <th scope= "col"  id="mo8-9"></th>
-            <th scope= "col"  id="di8-9"></th>
-            <th scope= "col"  id="mi8-9"></th>
-            <th scope= "col"  id="do8-9"></th>
-            <th scope= "col"  id="fr8-9"></th>
-            <th scope= "col"  id="sa8-9"></th>
-            <th scope= "col"  id="so8-9"></th>
+            <th scope="row" id="uhrzeit">08:00</th>
+            <th scope="col" id="mo8-9"></th>
+            <th scope="col" id="di8-9"></th>
+            <th scope="col" id="mi8-9"></th>
+            <th scope="col" id="do8-9"></th>
+            <th scope="col" id="fr8-9"></th>
+            <th scope="col" id="sa8-9"></th>
+            <th scope="col" id="so8-9"></th>
           </tr>
           <tr>
             <!-- 09:00-10:00 Uhr -->
-            <th scope= "row">09:00</th>
-            <th scope= "col" id="mo9-10"></th>
-            <th scope= "col" id="di9-10"></th>
-            <th scope= "col" id="mi9-10"></th>
-            <th scope= "col" id="do9-10"></th>
-            <th scope= "col" id="fr9-10"></th>
-            <th scope= "col" id="sa9-10"></th>
-            <th scope= "col" id="so9-10"></th>
+            <th scope="row">09:00</th>
+            <th scope="col" id="mo9-10"></th>
+            <th scope="col" id="di9-10"></th>
+            <th scope="col" id="mi9-10"></th>
+            <th scope="col" id="do9-10"></th>
+            <th scope="col" id="fr9-10"></th>
+            <th scope="col" id="sa9-10"></th>
+            <th scope="col" id="so9-10"></th>
           </tr>
           <tr>
-          <!-- 10:00 Uhr - 11:00 Uhr -->
-          <th scope="row">10:00</th>
-          <th scope= "col" id="mo10-11"></th>
-          <th scope= "col" id="di10-11"></th>
-          <th scope= "col" id="mi10-11"></th>
-          <th scope= "col" id="do10-11"></th>
-          <th scope= "col" id="fr10-11"></th>
-          <th scope= "col" id="sa10-11"></th>
-          <th scope= "col" id="so10-11"></th>
-        </tr>
-        <tr>
-          <!-- 11:00 Uhr - 12:00 Uhr -->
-          <th scope="row">11:00</th>
-          <th scope= "col" id="mo11-12"></th>
-          <th scope= "col" id="di11-12"></th>
-          <th scope= "col" id="mi11-12"></th>
-          <th scope= "col" id="do11-12"></th>
-          <th scope= "col" id="fr11-12"></th>
-          <th scope= "col" id="sa11-12"></th>
-          <th scope= "col" id="so11-12"></th>
-        </tr>
-        <tr>
-          <!-- 12:00 Uhr - 13:00 Uhr -->
-          <th scope="row">12:00</th>
-          <th scope= "col" id="mo12-13"></th>
-          <th scope= "col" id="di12-13"></th>
-          <th scope= "col" id="mi12-13"></th>
-          <th scope= "col" id="do12-13"></th>
-          <th scope= "col" id="fr12-13"></th>
-          <th scope= "col" id="sa12-13"></th>
-          <th scope= "col" id="so12-13"></th>
-        </tr>
-        <!-- 13:00 Uhr bis 14:00 Uhr -->
-        <th scope="row">13:00</th>
-        <th scope= "col" id="mo13-14"></th>
-        <th scope= "col" id="di13-14"></th>
-        <th scope= "col" id="mi13-14"></th>
-        <th scope= "col" id="do13-14"></th>
-        <th scope= "col" id="fr13-14"></th>
-        <th scope= "col" id="sa13-14"></th>
-        <th scope= "col" id="so13-14"></th>
-      </tr>
-      <tr>
-        <!-- 14:00 Uhr bis 15:00 Uhr -->
-        <th scope="row">14:00</th>
-        <th scope= "col" id="mo14-15"></th>
-        <th scope= "col" id="di14-15"></th>
-        <th scope= "col" id="mi14-15"></th>
-        <th scope= "col" id="do14-15"></th>
-        <th scope= "col" id="fr14-15"></th>
-        <th scope= "col" id="sa14-15"></th>
-        <th scope= "col" id="so14-15"></th>
-      </tr>
-      <tr>
-        <!-- 15:00 Uhr bis 16:00 Uhr-->
-        <th scope="row">15:00</th>
-        <th scope= "col" id="mo15-16"></th>
-        <th scope= "col" id="di15-16"></th>
-        <th scope= "col" id="mi15-16"></th>
-        <th scope= "col" id="do15-16"></th>
-        <th scope= "col" id="fr15-16"></th>
-        <th scope= "col" id="sa15-16"></th>
-        <th scope= "col" id="so15-16"></th>
-      </tr>
-    <tr>
-      <!-- 16:00 Uhr bis 17:00 Uhr -->
-      <th scope="row">16:00</th>
-      <th scope= "col" id="mo16-17"></th>
-      <th scope= "col" id="di16-17"></th>
-      <th scope= "col" id="mi16-17"></th>
-      <th scope= "col" id="do16-17"></th>
-      <th scope= "col" id="fr16-17"></th>
-      <th scope= "col" id="sa16-17"></th>
-      <th scope= "col" id="so16-17"></th>
-    </tr>
-    <tr>
-      <!-- 17:00 Uhr bis 18:00 Uhr -->
-      <th scope="row">17:00</th>
-      <th scope= "col" id="mo17-18"></th>
-      <th scope= "col" id="di17-18"></th>
-      <th scope= "col" id="mi17-18"></th>
-      <th scope= "col" id="do17-18"></th>
-      <th scope= "col" id="fr17-18"></th>
-      <th scope= "col" id="sa17-18"></th>
-      <th scope= "col" id="so17-18"></th>
-    </tr
-    <tr>
-      <!-- 18:00 Uhr bis 19:00 Uhr-->
-      <th scope="row">18:00</th>
-      <th scope= "col" id="mo18-19"></th>
-      <th scope= "col" id="di18-19"></th>
-      <th scope= "col" id="mi18-19"></th>
-      <th scope= "col" id="do18-19"></th>
-      <th scope= "col" id="fr18-19"></th>
-      <th scope= "col" id="sa18-19"></th>
-      <th scope= "col" id="so18-19"></th>
-    </tr>
-    <tr>
-      <!-- 19:00 Uhr bis 20:00 Uhr-->
-      <th scope="row">19:00</th>
-      <th scope= "col" id="mo19-20"></th>
-      <th scope= "col" id="di19-20"></th>
-      <th scope= "col" id="mi19-20"></th>
-      <th scope= "col" id="do19-20"></th>
-      <th scope= "col" id="fr19-20"></th>
-      <th scope= "col" id="sa19-20"></th>
-      <th scope= "col" id="so19-20"></th>
-    </tr>
+            <!-- 10:00 Uhr - 11:00 Uhr -->
+            <th scope="row">10:00</th>
+            <th scope="col" id="mo10-11"></th>
+            <th scope="col" id="di10-11"></th>
+            <th scope="col" id="mi10-11"></th>
+            <th scope="col" id="do10-11"></th>
+            <th scope="col" id="fr10-11"></th>
+            <th scope="col" id="sa10-11"></th>
+            <th scope="col" id="so10-11"></th>
+          </tr>
+          <tr>
+            <!-- 11:00 Uhr - 12:00 Uhr -->
+            <th scope="row">11:00</th>
+            <th scope="col" id="mo11-12"></th>
+            <th scope="col" id="di11-12"></th>
+            <th scope="col" id="mi11-12"></th>
+            <th scope="col" id="do11-12"></th>
+            <th scope="col" id="fr11-12"></th>
+            <th scope="col" id="sa11-12"></th>
+            <th scope="col" id="so11-12"></th>
+          </tr>
+          <tr>
+            <!-- 12:00 Uhr - 13:00 Uhr -->
+            <th scope="row">12:00</th>
+            <th scope="col" id="mo12-13"></th>
+            <th scope="col" id="di12-13"></th>
+            <th scope="col" id="mi12-13"></th>
+            <th scope="col" id="do12-13"></th>
+            <th scope="col" id="fr12-13"></th>
+            <th scope="col" id="sa12-13"></th>
+            <th scope="col" id="so12-13"></th>
+          </tr>
+          <!-- 13:00 Uhr bis 14:00 Uhr -->
+          <th scope="row">13:00</th>
+          <th scope="col" id="mo13-14"></th>
+          <th scope="col" id="di13-14"></th>
+          <th scope="col" id="mi13-14"></th>
+          <th scope="col" id="do13-14"></th>
+          <th scope="col" id="fr13-14"></th>
+          <th scope="col" id="sa13-14"></th>
+          <th scope="col" id="so13-14"></th>
+          </tr>
+          <tr>
+            <!-- 14:00 Uhr bis 15:00 Uhr -->
+            <th scope="row">14:00</th>
+            <th scope="col" id="mo14-15"></th>
+            <th scope="col" id="di14-15"></th>
+            <th scope="col" id="mi14-15"></th>
+            <th scope="col" id="do14-15"></th>
+            <th scope="col" id="fr14-15"></th>
+            <th scope="col" id="sa14-15"></th>
+            <th scope="col" id="so14-15"></th>
+          </tr>
+          <tr>
+            <!-- 15:00 Uhr bis 16:00 Uhr-->
+            <th scope="row">15:00</th>
+            <th scope="col" id="mo15-16"></th>
+            <th scope="col" id="di15-16"></th>
+            <th scope="col" id="mi15-16"></th>
+            <th scope="col" id="do15-16"></th>
+            <th scope="col" id="fr15-16"></th>
+            <th scope="col" id="sa15-16"></th>
+            <th scope="col" id="so15-16"></th>
+          </tr>
+          <tr>
+            <!-- 16:00 Uhr bis 17:00 Uhr -->
+            <th scope="row">16:00</th>
+            <th scope="col" id="mo16-17"></th>
+            <th scope="col" id="di16-17"></th>
+            <th scope="col" id="mi16-17"></th>
+            <th scope="col" id="do16-17"></th>
+            <th scope="col" id="fr16-17"></th>
+            <th scope="col" id="sa16-17"></th>
+            <th scope="col" id="so16-17"></th>
+          </tr>
+          <tr>
+            <!-- 17:00 Uhr bis 18:00 Uhr -->
+            <th scope="row">17:00</th>
+            <th scope="col" id="mo17-18"></th>
+            <th scope="col" id="di17-18"></th>
+            <th scope="col" id="mi17-18"></th>
+            <th scope="col" id="do17-18"></th>
+            <th scope="col" id="fr17-18"></th>
+            <th scope="col" id="sa17-18"></th>
+            <th scope="col" id="so17-18"></th>
+          </tr <tr>
+          <!-- 18:00 Uhr bis 19:00 Uhr-->
+          <th scope="row">18:00</th>
+          <th scope="col" id="mo18-19"></th>
+          <th scope="col" id="di18-19"></th>
+          <th scope="col" id="mi18-19"></th>
+          <th scope="col" id="do18-19"></th>
+          <th scope="col" id="fr18-19"></th>
+          <th scope="col" id="sa18-19"></th>
+          <th scope="col" id="so18-19"></th>
+          </tr>
+          <tr>
+            <!-- 19:00 Uhr bis 20:00 Uhr-->
+            <th scope="row">19:00</th>
+            <th scope="col" id="mo19-20"></th>
+            <th scope="col" id="di19-20"></th>
+            <th scope="col" id="mi19-20"></th>
+            <th scope="col" id="do19-20"></th>
+            <th scope="col" id="fr19-20"></th>
+            <th scope="col" id="sa19-20"></th>
+            <th scope="col" id="so19-20"></th>
+          </tr>
 
-    <tr>
-      <!-- 20:00 Uhr bis 21:00 Uhr-->
-      <th scope="row">20:00</th>
-      <th scope= "col" id="mo20-21"></th>
-      <th scope= "col" id="di20-21"></th>
-      <th scope= "col" id="mi20-21"></th>
-      <th scope= "col" id="do20-21"></th>
-      <th scope= "col" id="fr20-21"></th>
-      <th scope= "col" id="sa20-21"></th>
-      <th scope= "col" id="so20-21"></th>
-    </tr>
+          <tr>
+            <!-- 20:00 Uhr bis 21:00 Uhr-->
+            <th scope="row">20:00</th>
+            <th scope="col" id="mo20-21"></th>
+            <th scope="col" id="di20-21"></th>
+            <th scope="col" id="mi20-21"></th>
+            <th scope="col" id="do20-21"></th>
+            <th scope="col" id="fr20-21"></th>
+            <th scope="col" id="sa20-21"></th>
+            <th scope="col" id="so20-21"></th>
+          </tr>
 
-    <tr>
-      <!-- 21:00 Uhr bis 22:00 Uhr-->
-      <th scope="row">21:00</th>
-      <th scope= "col" id="mo21-22"></th>
-      <th scope= "col" id="di21-22"></th>
-      <th scope= "col" id="mi21-22"></th>
-      <th scope= "col" id="do21-22"></th>
-      <th scope= "col" id="fr21-22"></th>
-      <th scope= "col" id="sa21-22"></th>
-      <th scope= "col" id="so21-22"></th>
-    </tr>
+          <tr>
+            <!-- 21:00 Uhr bis 22:00 Uhr-->
+            <th scope="row">21:00</th>
+            <th scope="col" id="mo21-22"></th>
+            <th scope="col" id="di21-22"></th>
+            <th scope="col" id="mi21-22"></th>
+            <th scope="col" id="do21-22"></th>
+            <th scope="col" id="fr21-22"></th>
+            <th scope="col" id="sa21-22"></th>
+            <th scope="col" id="so21-22"></th>
+          </tr>
 
-    <tr>
-      <!-- 22:00 Uhr bis 23:00 Uhr-->
-      <th scope="row">22:00</th>
-      <th scope= "col" id="mo22-23"></th>
-      <th scope= "col" id="di22-23"></th>
-      <th scope= "col" id="mi22-23"></th>
-      <th scope= "col" id="do22-23"></th>
-      <th scope= "col" id="fr22-23"></th>
-      <th scope= "col" id="sa22-23"></th>
-      <th scope= "col" id="so22-23"></th>
-    </tr>
+          <tr>
+            <!-- 22:00 Uhr bis 23:00 Uhr-->
+            <th scope="row">22:00</th>
+            <th scope="col" id="mo22-23"></th>
+            <th scope="col" id="di22-23"></th>
+            <th scope="col" id="mi22-23"></th>
+            <th scope="col" id="do22-23"></th>
+            <th scope="col" id="fr22-23"></th>
+            <th scope="col" id="sa22-23"></th>
+            <th scope="col" id="so22-23"></th>
+          </tr>
 
-    <tr>
-      <!-- 23:00 Uhr bis 24:00 Uhr-->
-      <th scope="row">23:00</th>
-      <th scope= "col" id="mo23-24"></th>
-      <th scope= "col" id="di23-24"></th>
-      <th scope= "col" id="mi23-24"></th>
-      <th scope= "col" id="do23-24"></th>
-      <th scope= "col" id="fr23-24"></th>
-      <th scope= "col" id="sa23-24"></th>
-      <th scope= "col" id="so23-24"></th>
-    </tr>
-    <tr>
+          <tr>
+            <!-- 23:00 Uhr bis 24:00 Uhr-->
+            <th scope="row">23:00</th>
+            <th scope="col" id="mo23-24"></th>
+            <th scope="col" id="di23-24"></th>
+            <th scope="col" id="mi23-24"></th>
+            <th scope="col" id="do23-24"></th>
+            <th scope="col" id="fr23-24"></th>
+            <th scope="col" id="sa23-24"></th>
+            <th scope="col" id="so23-24"></th>
+          </tr>
+          <tr>
 
-  </tbody>
-  </table>
-</div>
-</div>
-</div>
-<footer>
-<p>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+  <footer>
+    <p>
 
-</p>
-<br>
-</br>
+    </p>
+    <br>
+    </br>
 
-<p><center><a class="info1" href="überUns.html" >Kontakt</a></center></p>
-<center><p><a class="info2" href="überUns.html">Info</a></p></center>
-<center><p><a class="info3" href="erstellen.html">Neuen Wochenplan erstellen</a></p></center>
+    <p>
+      <center><a class="info1" href="überUns.html">Kontakt</a></center>
+    </p>
+    <center>
+      <p><a class="info2" href="überUns.html">Info</a></p>
+    </center>
+    <center>
+      <p><a class="info3" href="erstellen.html">Neuen Wochenplan erstellen</a></p>
+    </center>
 
 
 
-<div class="adr">
-    <p>Straße am Forum 8</p>
-</div>
-<div class="plz">
-    <p>76187 Karlsruhe</p>
-</div>
-<div class="land">
-    <p>GERMANY</p>
-</div>
+    <div class="adr">
+      <p>Straße am Forum 8</p>
+    </div>
+    <div class="plz">
+      <p>76187 Karlsruhe</p>
+    </div>
+    <div class="land">
+      <p>GERMANY</p>
+    </div>
 
-<img  class="globusbild"  src="globus.jpg" border="0"  width="20" height="20" align:"top" > Deutsch</a>
+    <img class="globusbild" src="globus.jpg" border="0" width="20" height="20" align:"top"> Deutsch</a>
 
-<p class="letztezeile">© 2018 by MyPlaner</p>
+    <p class="letztezeile">© 2018 by MyPlaner</p>
 
-</footer>
+  </footer>
 
 </body>
+
 
 </html>
