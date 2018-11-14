@@ -6,8 +6,8 @@
 
   <meta charset="utf-8"/>
   <title> MyPlaner - dein digitaler Wochenplaner </title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="index.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
 
 
   <!-- Importierte Schriftarten von Google Fonts -->
@@ -69,28 +69,24 @@
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Deine Woche <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="erstellen.html" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item ">
+          <a class="nav-link" href="erstellen.html" >
             Erstellen
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="erstellen.html">Aktivität erstellen</a>
-
-          </div>
         </li>
-        <li class="nav-item active">
+        <!-- Bei eurer Eigenen Seite das einfügen bei <li class=" nav-item active" >, so ist dann nur genau Eure seite-->
+        <li class="nav-item ">
           <a class="nav-link" href="überUns.html">Über uns <span class="sr-only">(current)</span></a>
         </li>
-
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Suchen" id="search" aria-label="Search">
-        <button class="btn btn-outline-secondary my-2 my-sm-0"  onclick="searchFunction ()" type="submit">Suchen</button>
+        <button class="btn btn-outline-secondary my-2 my-sm-0" onclick="searchFunction ()" type="submit">Suchen</button>
       </form>
 
     </div>
   </nav>
+
 
   <!-- Für Responsive Design: Tabelle in Container-->
 <!--padding innenabstand -->
@@ -120,22 +116,21 @@
   </div>
 
 
+    <div class ="col-md-2">
+    <div class="divprint">
+   <img class="printen" onclick="window.print()" src="print.jpg"/>
+  </div>
+    </div>
 
-  <div class ="col-md-2">
-    <div class="" style="position:absolute">
-      <td class="selection" style="position: absolute; right:"0px";  >
+<!--   <div class ="col-md-2">
+    <div position ="absolute">
+      <td class="selection" position=" absolute" right="0px"  >
     <a class="printen" onclick="window.print();" href="index.html" >
-      <img src="print.jpg"   id="printlogo" />
+      <img src="print.jpg" id ="printlogo"/>
     </a>
     </td>
-
     </div>
-</div>
-
-
-</div>
-
-
+</div> -->
 </div>
     <div class ="table-responsive">
       <table class = "table">
@@ -158,8 +153,6 @@
 
         </thead>
         <tbody>
-          <!-- Den Inhalt einfügen.
-          Die gespeicherten Aktivitäten müssen hier rein.-->
 
 
           <tr>
@@ -368,29 +361,12 @@
       <th scope= "col" id="so23-24"></th>
     </tr>
     <tr>
-      <!-- 23:00 Uhr bis 24:00 Uhr-->
-      <th scope="row">24:00</th>
-      <th scope= "col" id="mo24"></th>
-      <th scope= "col" id="di24"></th>
-      <th scope= "col" id="mi24"></th>
-      <th scope= "col" id="do24"></th>
-      <th scope= "col" id="fr24"></th>
-      <th scope= "col" id="sa24"></th>
-      <th scope= "col" id="so24"></th>
-    </tr>
-
-
-
-
 
   </tbody>
   </table>
 </div>
 </div>
 </div>
-
-
-</body>
 <footer>
 <p>
 
@@ -420,7 +396,6 @@
 
 </footer>
 
-
-
+</body>
 
 </html>

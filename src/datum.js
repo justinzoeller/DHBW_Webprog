@@ -5,7 +5,8 @@ window.addEventListener("load",() =>{
 var d1 =  moment().startOf('isoWeek').isoWeekday(1).format('DD. MM. YYYY');
 
 //6 tage hinzugefügt für sonntag
-var d2 = moment().add(6, 'days').format('DD. MM. YYYY');
+var d2 = moment().endOf('isoWeek').isoWeekday(7).format('DD. MM. YYYY');
+
 
 //zur innerhtml hinzugefügt
 document.getElementById("datum").innerHTML = d1 + '  -  ' + d2;
