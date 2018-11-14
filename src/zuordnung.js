@@ -909,7 +909,7 @@ rootRef.once("value").then(function(snapshot) {
           if (webprog[i].prio == "hohe Priorität") {
             // Wenn hohe Priorität, dann drei Ausrufezeichen
             var mo8l4 = document.createElement("li"); // Listenelement anlegen
-            var mo484 = document.createTextNode(webprog[i].name + " " + "!!!"+ " " +"[bis" +" " + webprog[i].zeitbis+"]");
+            var mo8p4 = document.createTextNode(webprog[i].name + " " + "!!!"+ " " +"[bis" +" " + webprog[i].zeitbis+"]");
             mo8l4.appendChild(mo8p4); // dem Listenelement Text anhängen
             mo8.appendChild(mo8l4); // Listenelement dem Feld anhängen
             let btn = createDeleteButton();
@@ -1816,7 +1816,7 @@ for (i in webprog) {
     if (webprog[i].prio == "hohe Priorität") {
       // Wenn hohe Priorität, dann drei Ausrufezeichen
       var di8l4 = document.createElement("li"); // Listenelement anlegen
-      var di484 = document.createTextNode(webprog[i].name + " " + "!!!"+ " " +"[bis" +" " + webprog[i].zeitbis+"]");
+      var di8p4 = document.createTextNode(webprog[i].name + " " + "!!!"+ " " +"[bis" +" " + webprog[i].zeitbis+"]");
       di8l4.appendChild(di8p4); // dem Listenelement Text anhängen
       di8.appendChild(di8l4); // Listenelement dem Feld anhängen
       let btn = createDeleteButton();
@@ -3626,7 +3626,7 @@ for (i in webprog) {
     if (webprog[i].prio == "hohe Priorität") {
       // Wenn hohe Priorität, dann drei Ausrufezeichen
       var do8l4 = document.createElement("li"); // Listenelement anlegen
-      var do484 = document.createTextNode(webprog[i].name + " " + "!!!"+ " " +"[bis" +" " + webprog[i].zeitbis+"]");
+      var do8p4 = document.createTextNode(webprog[i].name + " " + "!!!"+ " " +"[bis" +" " + webprog[i].zeitbis+"]");
       do8l4.appendChild(do8p4); // dem Listenelement Text anhängen
       do8.appendChild(do8l4); // Listenelement dem Feld anhängen
       let btn = createDeleteButton();
@@ -4534,7 +4534,7 @@ for (i in webprog) {
     if (webprog[i].prio == "hohe Priorität") {
       // Wenn hohe Priorität, dann drei Ausrufezeichen
       var fr8l4 = document.createElement("li"); // Listenelement anlegen
-      var fr484 = document.createTextNode(webprog[i].name + " " + "!!!"+ " " +"[bis" +" " + webprog[i].zeitbis+"]");
+      var fr8p4 = document.createTextNode(webprog[i].name + " " + "!!!"+ " " +"[bis" +" " + webprog[i].zeitbis+"]");
       fr8l4.appendChild(fr8p4); // dem Listenelement Text anhängen
       fr8.appendChild(fr8l4); // Listenelement dem Feld anhängen
       let btn = createDeleteButton();
@@ -5441,7 +5441,7 @@ for (i in webprog) {
     if (webprog[i].prio == "hohe Priorität") {
       // Wenn hohe Priorität, dann drei Ausrufezeichen
       var sa8l4 = document.createElement("li"); // Listenelement anlegen
-      var sa484 = document.createTextNode(webprog[i].name + " " + "!!!"+ " " +"[bis" +" " + webprog[i].zeitbis+"]");
+      var sa8p4 = document.createTextNode(webprog[i].name + " " + "!!!"+ " " +"[bis" +" " + webprog[i].zeitbis+"]");
       sa8l4.appendChild(sa8p4); // dem Listenelement Text anhängen
       sa8.appendChild(sa8l4); // Listenelement dem Feld anhängen
       let btn = createDeleteButton();
@@ -6348,7 +6348,7 @@ for (i in webprog) {
     if (webprog[i].prio == "hohe Priorität") {
       // Wenn hohe Priorität, dann drei Ausrufezeichen
       var so8l4 = document.createElement("li"); // Listenelement anlegen
-      var so484 = document.createTextNode(webprog[i].name + " " + "!!!"+ " " +"[bis" +" " + webprog[i].zeitbis+"]");
+      var so8p4 = document.createTextNode(webprog[i].name + " " + "!!!"+ " " +"[bis" +" " + webprog[i].zeitbis+"]");
       so8l4.appendChild(so8p4); // dem Listenelement Text anhängen
       so8.appendChild(so8l4); // Listenelement dem Feld anhängen
       let btn = createDeleteButton();
