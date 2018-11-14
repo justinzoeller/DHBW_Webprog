@@ -3,45 +3,29 @@
   font-family: "helvetica neue"
 }
 
-<<<<<<< HEAD
 .arminboy {
-=======
-/*Delete button*/
-.ErstelleButton {
->>>>>>> 5cefd402e8e124dfe28faeeb571408aa8e99e2b5
   border: 0;
   background-color: transparent;
   color: transparent;
 }
 
-.ErstelleButton:hover {
+.arminboy:hover {
   border: 0;
   background-color: transparent;
   color: black;
 }
 
-.col{
+.col {
   style="position:absolute"
 }
 
-.selection{
+.selection {
   style="position: absolute; top: 0px; right:0px"
 }
+
 body {
   background-color: white;
   background-image: url(test2.jpg.jpg);
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <<<<<<< HEAD
-=======
-
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
-=======
-
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
->>>>>>> 5cefd402e8e124dfe28faeeb571408aa8e99e2b5
 
   /* Da eine Woche 7 Tage hat.*/
   .kalender {
@@ -49,37 +33,9 @@ body {
     grid-template-columns: 8ch auto;
   }
 
-<<<<<<< HEAD
   .printen {
     width: 100 px;
     height: 100 px;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  =======background-repeat:no-repeat;
-  background-size: 100% 100%;
-  margin-bottom: 100%;
-
-  >>>>>>>88a5ed2f3e353a42ddbaecbeb3e91859e53182e3 .printen {
-    position: relative;
-    top: -16px;
-    right: -100px;
-=======
-=======
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
-
-
-
-  .printen{
-    width: 100 px;
-    height: 100 px;
-
-
-<<<<<<< HEAD
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
-=======
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
->>>>>>> 5cefd402e8e124dfe28faeeb571408aa8e99e2b5
   }
 }
 
@@ -99,16 +55,8 @@ table, th, td {
   color: white;
   font-family: "Sacramento", cursive;
   font-size: 2vw !important;
-<<<<<<< HEAD
 }
 
-=======
-
-
-}
-
-
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
 #ueberschriftstart, .hauptüberschrift {
   text-align: center;
   font-family: "Cookie", cursive;
@@ -125,42 +73,18 @@ table, th, td {
   color: white;
   font-family: "Sacramento", cursive;
   font-size: 4vw;
-<<<<<<< HEAD
 }
 
 .adr {
   vertical-align: right;
   text-align: right;
   color: black;
-=======
-
-}
-.adr{
-  	vertical-align: right;
-  	text-align:right;
-    color:black;
-
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
 }
 
 .adr {
   vertical-align: right;
-<<<<<<< HEAD
-<<<<<<< HEAD
-  <<<<<<< HEAD text-align: right;
-  color: white;
   text-align: right;
   color: black;
-=======
-  text-align:right;
-  color:black;
-
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
-=======
-  text-align:right;
-  color:black;
-
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
 }
 
 .plz {
@@ -169,12 +93,6 @@ table, th, td {
   color: black;
 }
 
-<<<<<<< HEAD
-text-align:right;
-color:black;
-
-=======
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
 .land {
   vertical-align: right;
   text-align: right;
@@ -226,22 +144,9 @@ color:black;
   text-align: center;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 #logo {
   width: 55px;
   height: 55px;
-  ;
-=======
-#logo{
-  width:55px;
-  height:55px;
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
-=======
-#logo{
-  width:55px;
-  height:55px;
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
 }
 
 .infoueberschrift {
@@ -278,76 +183,32 @@ color:black;
 .info3 {
   font-size: 1vw;
   color: white;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
-
-.info1{
-font-size: 1vw;
-color:black;
 }
-.info2{
-font-size: 1vw;
-color:black;
+
+.info1 {
+  font-size: 1vw;
+  color: black;
 }
-.info3{
-font-size: 1vw;
-color:black;
+
+.info2 {
+  font-size: 1vw;
+  color: black;
 }
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
 
-  =======.info1 {
-    font-size: 1vw;
-    color: black;
-  }
+.info3 {
+  font-size: 1vw;
+  color: black;
+}
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-  .info2 {
-    font-size: 1vw;
-    color: black;
-  }
+.letztezeile {
+  color: black;
+}
 
-  .info3 {
-    font-size: 1vw;
-    color: black;
-  }
-
-  .letztezeile {
-    color: black;
-  }
-
-  .letzte {
-    background-size: "100%"
-      width:"100%"
-  }
-
-  #letzte {
-    color: white;
-    >>>>>>>88a5ed2f3e353a42ddbaecbeb3e91859e53182e3
-  }
-
-  #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
-    font-family: "Neucha", cursive;
-    font-size: 2.5vw;
-  }
-=======
-
-=======
-
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
-
->>>>>>> 5cefd402e8e124dfe28faeeb571408aa8e99e2b5
 #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
   font-family: "Neucha", cursive;
   font-size: 2.5vw;
 }
 
-<<<<<<< HEAD
 .divprint {
   max-width: 100%;
   height: auto;
@@ -361,12 +222,4 @@ color:black;
   height: auto;
   left: 0px;
   right: 0px;
-=======
-
-}
-<<<<<<< HEAD
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
-=======
->>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
->>>>>>> 5cefd402e8e124dfe28faeeb571408aa8e99e2b5
 }
