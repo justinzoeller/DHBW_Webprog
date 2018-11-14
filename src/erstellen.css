@@ -1,61 +1,85 @@
-
 .body {
   background-color: white;
   background-image: url(test2.jpg.jpg);
   background-repeat:no-repeat;
   background-size: 100% 100%;
   margin-bottom: 100%;
-
-}
-
-.hauptüberschrift {
+  
+  
+  }
+  
+  .hauptüberschrift {
   font-family: "Cookie";
   text-align: center;
   color: white;
   font-size: 5rem;
-}
-
-
-.label {
+  padding-top: 100px !important;
+  }
+  
+  /* Navbar */
+  nav{
+  position:fixed !important;
+  width:100%;
+  background-color:rgb(179, 179, 179);
+  
+  }
+  .navbar {
+  font-family: "Roboto", sans-serif;
+  }
+  .navbar-brand {
+  font-family: "Pacifico";
+  }
+  /* Navbar CSS zuende */
+  
+  /* Logo formatierung */
+  #logo{
+  width:55px;
+  height:55px;;
+  }
+  /* Logo Ende */
+  
+  .label {
   font-family: "Cookie", cursive;
   font-size: 3rem;
-}
-
-#zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
+  }
+  
+  #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
   font-family: "Roboto";
   font-size: 1rem;
-}
-
-#priobild {
+  }
+  
+  #priobild {
   max-width: 4vw;
   max-height: 5vw;
-}
-
-
-
-
-#info {
+  }
+  
+  
+  #info {
   font-size: 18px;
   font-family: "Krub", sans-serif;
-}
-
-#infologo {
+  }
+  
+  #infologo {
   max-width: 5vw;
   max-height: 5vw;
-}
-
-#ein {
+  }
+  
+  #ein {
   text-align: center;
   font-family: "Cookie", cursive;
   font-size: 25px;
   align-content: center;
   background-color: white !important;
-
-}
-
-
-#formularganz {
+  
+  }
+  
+  #formularganz {
   background-color: white;
   background-image: url(test2.jpg.jpg);
-
-}
+  
+  }
+  
+  html {
+  background-color: white;
+  background-image: url(test2.jpg.jpg);
+  }
