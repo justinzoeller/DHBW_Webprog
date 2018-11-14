@@ -6,6 +6,8 @@
   <title> MyPlaner - dein digitaler Wochenplaner </title>
   <link rel="stylesheet" href="überUns.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script type="text/javascript" src="suchen.js"></script>
+
 
   <!-- Importierte Schriftarten von Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
@@ -23,13 +25,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
+
 </head>
 
 <body>
 
-  <!-- NavBar-->
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Integration einer Navigationsbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <a class="navbar-brand" href="startseite.html">
       <img id="logo" src="Logo_MyPlaner.png" alt="" /> MyPlaner</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,35 +40,47 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Deine Woche<span class="sr-only">(current)</span></a>
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html">Deine Woche <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="erstellen.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item">
+          <a class="nav-link" href="erstellen.html">
             Erstellen
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="erstellen.html">Aktivität erstellen</a>
-          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="überUns.html">Über uns<span class="sr-only">(current)</span></a>
+        <!-- Bei eurer Eigenen Seite das einfügen bei <li class=" nav-item active" >, so ist dann nur genau Eure seite-->
+        <li class="nav-item active ">
+          <a class="nav-link" href="überUns.html">Über uns <span class="sr-only">(current)</span></a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Suchen" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suchen</button>
+        <input class="form-control mr-sm-2" type="search" placeholder="Suchen" id="search" aria-label="Search">
+        <button class="btn btn-outline-secondary my-2 my-sm-0" onclick="searchFunction ()" type="submit">Suchen</button>
       </form>
+
     </div>
   </nav>
+
+
   <div class="header" id="ebene0" style="min-height:110vh;">
     <div>
+      <br />
+      <br />
 
       <h1 class="überunsÜberschrift">Über uns</h1>
       <br />
+      <br />
+      <br />
+
       <h4 class="überunsÜberschrift2">MyPlaner</h4>
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <h6 class="überunsInfo">Wir unterstützen dich bei deinem Zeitmanagement!</h6>
+      <br />
+      <br />
       <br />
       <br />
       <br />
@@ -77,11 +91,11 @@
           <div class="col-md-12">
             <div class="jumbotron" id="j1">
 
-              <h5>
+              <h6>
                 Unsere Anwendung ist ein digitaler Wochenplaner, in dem du eine Liste mit all den Dingen, die du in der aktuellen Woche erledigen musst, eintragen kannst! Der Wochenplan unterstützt dich somit beim Zeitmanagement.
-              </h5>
+              </h6>
               <p>
-                <a class="btn btn-primary btn-large" href="startseite.html">Zur Startseite</a>
+                <a class="btn" href="startseite.html" id="F">Zur Startseite</a>
               </p>
             </div>
           </div>
@@ -90,6 +104,8 @@
         <br />
         <br />
         <br />
+        <br />
+
         <div class="row">
           <div class="col-md-4">
             <img src="Help.png" alt="help" width="30px" height="30px" />
@@ -100,7 +116,7 @@
               Falls du beim Erstellen Probleme hast oder nicht weiter kommst, kannst du dich gerne jederzeit bei uns melden! Schreib uns eine Mail oder rufe uns einfach unter der 07225-989366 an. Wir würden uns freuen, von dir zu hören
             </p>
             <p>
-              <a class="btn" href="" mailto:aisha.ch@hotmail.de?subject=Kontaktanfrage"" id="E">E-Mail schreiben»</a>
+              <a class="btn" href="" mailto:kontakt@myPlaner.de?subject=Kontaktanfrage"" id="E">E-Mail schreiben»</a>
             </p>
           </div>
           <div class="col-md-4">
@@ -114,7 +130,7 @@
               dir besonders gut gefällt und in welchen Bereichen du Verbesserungspotenzial siehst. Vielen Dank dafür!
             </p>
             <p>
-              <a class="btn" href="mailto:aisha.ch@hotmail.de?subject=Feedback" id="F">Feedback geben»</a>
+              <a class="btn" href="mailto:feedback@myPlaner.de?subject=Feedback" id="F">Feedback geben»</a>
             </p>
           </div>
           <div class="col-md-4">
@@ -132,6 +148,8 @@
         </div>
       </div>
 
+      <br />
+      <br />
       <br />
       <br />
       <br />
@@ -160,9 +178,11 @@
             </div>
             <br />
             <br />
+            <br />
+            <br />
             <div class="row">
               <div class="col-md-3">
-                <h5>
+                <h5 class="meli">
                   Melise Akcay
                 </h5>
                 <h6>Gründerin von MyPlaner</h6>
@@ -170,15 +190,15 @@
 
               </div>
               <div class="col-md-3">
-                <h5>
+                <h5 class="meli">
                   Gamze-Nur Topkac
                 </h5>
                 <h6>Gründerin von MyPlaner</h6>
-                <p>19 Jahre alt, Studentin</p>
+                <p>20 Jahre alt, Studentin</p>
 
               </div>
               <div class="col-md-3">
-                <h5>
+                <h5 class="meli">
                   Justin Zöller
                 </h5>
                 <h6>Gründer von MyPlaner</h6>
@@ -186,7 +206,7 @@
 
               </div>
               <div class="col-md-3">
-                <h5>
+                <h5 class="meli">
                   Aisha Choudhery
                 </h5>
                 <h6>Gründerin von MyPlaner</h6>
@@ -199,6 +219,7 @@
           </div>
         </div>
       </div>
+
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
@@ -221,6 +242,9 @@
       </div>
       <br />
       <hr />
+      <br />
+      <br />
+      <br />
       <br />
       <br />
 
@@ -249,7 +273,25 @@
       <br />
       <br />
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <h4 class="überunsInfo3">Ein gutes Planen macht wahre Erfolge möglich</h4>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <br />
       <br />
       <br />
@@ -267,5 +309,60 @@
 
 
 </body>
+
+<footer>
+
+  <hr />
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>
+          Anschrift
+        </h2>
+        <p>
+          <div class="adr">
+            <p>Straße am Forum 8</p>
+          </div>
+          <div class="plz">
+            <p>76187 Karlsruhe</p>
+          </div>
+          <div class="land">
+            <p>GERMANY</p>
+          </div>
+        </p>
+
+      </div>
+      <div class="col-md-4">
+        <h2>
+          Info
+        </h2>
+        <p>
+          Du willst mehr über uns erfahren? Dann wirst du hier zu unserer Info-Seite weitergeleitet. :)
+        </p>
+        <p>
+          <a class="btn" href="überUns.html">Über uns»</a>
+        </p>
+      </div>
+      <div class="col-md-4">
+        <br />
+        <br />
+        <br />
+        <h2>
+          Lass Ordnung und nicht Schicksal dein Leben bestimmen
+        </h2>
+        <p>
+          <a class="btn" href="erstellen.html">Plane jetzt deine Woche!»</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <hr />
+
+
+</footer>
+
+
+
+
 
 </html>

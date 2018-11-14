@@ -4,38 +4,59 @@
 }
 
 /*Delete button*/
-.arminboy {
+.ErstelleButton {
   border: 0;
   background-color: transparent;
   color: transparent;
 }
 
-.arminboy:hover {
+.ErstelleButton:hover {
   border: 0;
   background-color: transparent;
   color: black;
 }
 
+.col{
+  style="position:absolute"
+}
+
+.selection{
+  style="position: absolute; top: 0px; right:0px"
+}
 body {
   background-color: white;
   background-image: url(test2.jpg.jpg);
 <<<<<<< HEAD
+  <<<<<<< HEAD
+=======
+
+>>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
 
   /* Da eine Woche 7 Tage hat.*/
   .kalender {
     display: grid;
     grid-template-columns: 8ch auto;
   }
-=======
-  background-repeat:no-repeat;
+
+<<<<<<< HEAD
+  =======background-repeat:no-repeat;
   background-size: 100% 100%;
   margin-bottom: 100%;
->>>>>>> 88a5ed2f3e353a42ddbaecbeb3e91859e53182e3
 
-  .printen {
+  >>>>>>>88a5ed2f3e353a42ddbaecbeb3e91859e53182e3 .printen {
     position: relative;
     top: -16px;
     right: -100px;
+=======
+
+
+
+  .printen{
+    width: 100 px;
+    height: 100 px;
+
+
+>>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
   }
 }
 
@@ -50,13 +71,20 @@ table, th, td {
   background-color: rgb(250, 240, 230);
 }
 
+#datum {
+  text-align: center;
+  color: white;
+  font-family: "Sacramento", cursive;
+  font-size: 2vw !important;
+}
+
 #ueberschriftstart, .hauptüberschrift {
   text-align: center;
   font-family: "Cookie", cursive;
   font-size: 8vw;
 }
 
-.üb {
+.üb, #datum {
   color: white;
   .padding-top: 0px !important;
 }
@@ -65,44 +93,45 @@ table, th, td {
   text-align: center;
   color: white;
   font-family: "Sacramento", cursive;
-<<<<<<< HEAD
   font-size: 4vw;
-=======
-    font-size: 4vw;
 }
-.adr{
-  	vertical-align: right;
-  	text-align:right;
-    color:black;
->>>>>>> 88a5ed2f3e353a42ddbaecbeb3e91859e53182e3
+
+.adr {
+  vertical-align: right;
+  text-align: right;
+  color: black;
 }
 
 .adr {
   vertical-align: right;
 <<<<<<< HEAD
-  text-align: right;
+  <<<<<<< HEAD text-align: right;
   color: white;
+  text-align: right;
+  color: black;
 =======
   text-align:right;
   color:black;
->>>>>>> 88a5ed2f3e353a42ddbaecbeb3e91859e53182e3
+
+>>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
 }
 
 .plz {
   vertical-align: right;
-<<<<<<< HEAD
   text-align: right;
-  color: white;
+  color: black;
 }
-=======
-  text-align:right;
-  color:black;
->>>>>>> 88a5ed2f3e353a42ddbaecbeb3e91859e53182e3
 
+<<<<<<< HEAD
+text-align:right;
+color:black;
+
+=======
+>>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
 .land {
   vertical-align: right;
   text-align: right;
-  color: white;
+  color: black;
 }
 
 .navbar {
@@ -150,6 +179,18 @@ table, th, td {
   text-align: center;
 }
 
+<<<<<<< HEAD
+#logo {
+  width: 55px;
+  height: 55px;
+  ;
+=======
+#logo{
+  width:55px;
+  height:55px;
+>>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
+}
+
 .infoueberschrift {
   font-family: "Cookie", cursive;
   font-size: 10vw;
@@ -170,7 +211,6 @@ table, th, td {
   font-size: 2vw;
   margin-top: 4vw;
 }
-<<<<<<< HEAD
 
 .info1 {
   font-size: 1vw;
@@ -185,7 +225,9 @@ table, th, td {
 .info3 {
   font-size: 1vw;
   color: white;
+<<<<<<< HEAD
 =======
+
 .info1{
 font-size: 1vw;
 color:black;
@@ -198,26 +240,52 @@ color:black;
 font-size: 1vw;
 color:black;
 }
+>>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
 
-.letztezeile{
-  color:black;
-}
+  =======.info1 {
+    font-size: 1vw;
+    color: black;
+  }
 
-.letzte{
-   background-size: "100%"
-   width:"100%"
+<<<<<<< HEAD
+  .info2 {
+    font-size: 1vw;
+    color: black;
+  }
 
-}
+  .info3 {
+    font-size: 1vw;
+    color: black;
+  }
 
+  .letztezeile {
+    color: black;
+  }
 
-#letzte{
-  color:white;
->>>>>>> 88a5ed2f3e353a42ddbaecbeb3e91859e53182e3
-}
+  .letzte {
+    background-size: "100%"
+      width:"100%"
+  }
+
+  #letzte {
+    color: white;
+    >>>>>>>88a5ed2f3e353a42ddbaecbeb3e91859e53182e3
+  }
+
+  #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
+    font-family: "Neucha", cursive;
+    font-size: 2.5vw;
+  }
+=======
+
 
 #zeitbisHelp, #prioHelp, #zeitvonHelp, #nameHelp, #tagHelp {
   font-family: "Neucha", cursive;
   font-size: 2.5vw;
 }
+
+
+}
+>>>>>>> 572c87794bb7a80797416fc4d7c1795a2330e28a
 }
 }

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
 
+
   <!-- Importierte Schriftarten von Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -36,14 +37,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
+
+
+
   <!-- Einbinden von Moment.js-Bibliothek, um auf das aktuelle Datum zugreifen zu können.-->
   <script src="moment.js"></script>
   <script>
     moment().format();
   </script>
 
-
-
+<script src= "datum.js"></script>
 
 
 
@@ -53,54 +56,41 @@
 
 <body>
   <!-- Integration einer Navigationsbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="startseite.html">
+      <img id="logo" src="Logo_MyPlaner.png" alt="" /> MyPlaner</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="startseite.html">
-    <img src = "Logo_MyPlaner.png"width="30" height="30" alt="" >   MyPlaner</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Deine Woche <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="erstellen.html" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Erstellen
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="erstellen.html">Aktivität erstellen</a>
 
-<!--same class attribute will have the same format and style -->
-<!--div  Block-Element nimmt die komplette Breite ein -->
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <!--span innerhalb des textes zb hervorheben -->
-        <a class="nav-link" href="index.html">Deine Woche <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="erstellen.html">Erstellen</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Erstellen
+          </div>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="überUns.html">Über uns <span class="sr-only">(current)</span></a>
+        </li>
 
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="erstellen.html">Aktivität erstellen</a>
-          <a class="dropdown-item" href="#">Notiz erstellen</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="überUns.html">Über uns <span class="sr-only">(current)</span></a>
-      </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Suchen" id="search" aria-label="Search">
+        <button class="btn btn-outline-secondary my-2 my-sm-0"  onclick="searchFunction ()" type="submit">Suchen</button>
+      </form>
 
-      <li class="nav-item">
-        <a class="nav-link" href="überUns.html">Über uns</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Suchen" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suchen</button>
-    </form>
-  </div>
-</nav>
-
+    </div>
+  </nav>
 
   <!-- Für Responsive Design: Tabelle in Container-->
 <!--padding innenabstand -->
@@ -117,6 +107,7 @@
       <br />
 
     <h1 class="üb" id = "ueberschriftstart"> Deine Woche </h1>
+    <h2 id ="datum"></h2>
     <h2 class="zweiüb" id = "ueberschriftzwei">den perfekten Überblick haben</h2>
     <br />
       <br />
@@ -132,9 +123,9 @@
 
   <div class ="col-md-2">
     <div class="" style="position:absolute">
-      <td class="selection" style="position: absolute; top: 0px; right:0px">
-    <a class="printen" onclick="window.print();" href="index.html">
-      <img src="print.jpg"  style="position: absolute; top: 0px; right:-350px" width="80" height="80" align:"right" alt="" id="printlogo" />
+      <td class="selection" style="position: absolute; right:"0px";  >
+    <a class="printen" onclick="window.print();" href="index.html" >
+      <img src="print.jpg"   id="printlogo" />
     </a>
     </td>
 
@@ -153,9 +144,9 @@
           <!-- Aufbauen der Spalten -->
           <tr id="spalten"> <!--neue Tabellenzeile -->
             <col width="100">
-            <th scope="col" colspan="1,5">Uhrzeit</th> <!--kopfzelle  -->
-            <th scope="col" width="100px" >Montag</th> <!-- col header für spalte -->
-            <th scope= "col" width="100px">Dienstag</th><!-- scope Bezug zwischen Kopf- und Datenzellen herstellen -->
+            <th scope="col" colspan="1,5">Uhrzeit</th>
+            <th scope="col" width="100px" >Montag</th>
+            <th scope= "col" width="100px">Dienstag</th>
             <th scope= "col" width="100px">Mittwoch</th>
             <th scope= "col" width="100px">Donnerstag</th>
             <th scope= "col" width="100px">Freitag</th>
@@ -173,8 +164,8 @@
 
           <tr>
             <!-- 06:00-07:00 Uhr-->
-            <th scope="row" id="uhrzeit">06:00</th> <!--row header für reihe -->
-            <th scope= "col"  id="mo6-7"></th> <!-- id wenn keine klasse, nur einmal benutzen  -->
+            <th scope="row" id="uhrzeit">06:00</th>
+            <th scope= "col"  id="mo6-7"></th>
             <th scope= "col"  id="di6-7"></th>
             <th scope= "col"  id="mi6-7"></th>
             <th scope= "col"  id="do6-7"></th>
@@ -406,6 +397,7 @@
 </p>
 <br>
 </br>
+
 <p><center><a class="info1" href="überUns.html" >Kontakt</a></center></p>
 <center><p><a class="info2" href="überUns.html">Info</a></p></center>
 <center><p><a class="info3" href="erstellen.html">Neuen Wochenplan erstellen</a></p></center>
@@ -422,7 +414,7 @@
     <p>GERMANY</p>
 </div>
 
-<img  class="globusbild"  src="globus.jpg" border="0"  width="20" height="20" align:"top" / id="letzte"  ;> Deutsch</a>
+<img  class="globusbild"  src="globus.jpg" border="0"  width="20" height="20" align:"top" > Deutsch</a>
 
 <p class="letztezeile">© 2018 by MyPlaner</p>
 
