@@ -223,3 +223,21 @@ table, th, td {
   left: 0px;
   right: 0px;
 }
+footer {
+  background-color: #FFE4E1;
+}
+.ueberschrift{
+  font-family: "Cookie", cursive !important;
+  text-align:center;
+}
+p {
+  text-align:center;
+  font-size:1.5rem;
+}
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
