@@ -1,8 +1,14 @@
-/* Hierbei handelt es sich um die CSS-Datei für die Startseite der Anwendung basierend auf Google Material Design */
-<link rel="stylesheet"href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"crossorigin="anonymous"><script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"crossorigin="anonymous"></script>html {
+html {
   font-family: "helvetica neue"
 }
 
+body {
+  background-color: white;
+  background-image: url(test2.jpg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-bottom: 100%;
+}
 .arminboy {
   border: 0;
   background-color: transparent;
@@ -23,21 +29,8 @@
   style="position: absolute; top: 0px; right:0px"
 }
 
-body {
-  background-color: white;
-  background-image: url(test2.jpg.jpg);
 
-  /* Da eine Woche 7 Tage hat.*/
-  .kalender {
-    display: grid;
-    grid-template-columns: 8ch auto;
-  }
 
-  .printen {
-    width: 100 px;
-    height: 100 px;
-  }
-}
 
 /* Anpassungen für die Tabelle
   bzw. den Wocehenplaner */
@@ -215,6 +208,7 @@ table, th, td {
   left: 0px;
   right: 0px;
   margin-top: 80px;
+  align: left;
 }
 
 .printen {
@@ -240,4 +234,15 @@ p {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+#print {
+  align-self: center !important;
+  border: 1px solid white;
+  font-family: "Cookie", cursive;
+  font-size: 1.5rem;
+  color: black;
+  background-color: white;
+  text-align: center;
+
 }
